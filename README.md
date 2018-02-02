@@ -19,3 +19,5 @@ Tabbeb interface
  - HomeKit?
  - CCTV camera video?
  - Home Automation?
+ - Charts tab
+ 

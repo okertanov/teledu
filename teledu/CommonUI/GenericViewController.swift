@@ -3,12 +3,13 @@
 //  Copyright © 2018 lexiko.me. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
-class FirstViewController: UIViewController {
-    override func viewDidLoad() {
+open class GenericViewController: UIViewController {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         
-        self.tabBarController?.tabBar.isHidden = false
+        setTabBarVisible(true);
     }
 }
