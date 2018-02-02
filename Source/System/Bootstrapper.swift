@@ -5,6 +5,7 @@
 
 import Foundation
 import UIKit
+import Common
 
 class Bootstrapper {
     private let serviceContext = ApplicationServiceContext()
@@ -32,12 +33,15 @@ class Bootstrapper {
     
     fileprivate func initializeUiImpl() -> UIWindow? {
         guard let keyWindow = UIApplication.shared.keyWindow else {
-            return UIWindow(frame: UIScreen.main.bounds)
+            let window = UIWindow(frame: UIScreen.main.bounds)
+            let rootVc = ViewLocator.locateVC()
+            window.rootViewController = rootVc
         }
         return keyWindow
     }
     
     fileprivate func registerImpl() {
+        // TODO: Check conformance A <- B
         serviceContext.register(MessageBoxService.self, MessageBoxServiceImpl())
         serviceContext.register(WebSocketService.self, WebSocketServiceImpl())
         serviceContext.register(MessagingService.self, MessagingServiceImpl())

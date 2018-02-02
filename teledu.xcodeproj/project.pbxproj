@@ -16,9 +16,6 @@
 		7662A0F32024778D00E15C63 /* teleduUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662A0F22024778D00E15C63 /* teleduUITests.swift */; };
 		768E5FD9202483B600D3B93F /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E5FD8202483B600D3B93F /* BrowserViewController.swift */; };
 		768E5FDB202483C800D3B93F /* SysInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E5FDA202483C800D3B93F /* SysInfoViewController.swift */; };
-		768E5FDE2024848500D3B93F /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E5FDD2024848500D3B93F /* ViewControllerExtensions.swift */; };
-		768E5FE02024849700D3B93F /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E5FDF2024849700D3B93F /* ViewExtensions.swift */; };
-		768E5FE2202484A400D3B93F /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E5FE1202484A400D3B93F /* StringExtensions.swift */; };
 		768E5FE52024857F00D3B93F /* GenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E5FE42024857F00D3B93F /* GenericViewController.swift */; };
 		768E5FE72024864200D3B93F /* MessagingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E5FE62024864200D3B93F /* MessagingService.swift */; };
 		768E5FEA2024865600D3B93F /* MessagingServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E5FE92024865600D3B93F /* MessagingServiceImpl.swift */; };
@@ -32,13 +29,13 @@
 		768E6000202494D300D3B93F /* MessageBoxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E5FFF202494D300D3B93F /* MessageBoxService.swift */; };
 		768E60032024950000D3B93F /* MessageBoxServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E60022024950000D3B93F /* MessageBoxServiceImpl.swift */; };
 		768E60052024962D00D3B93F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 768E60042024962D00D3B93F /* README.md */; };
-		768E603320249DCC00D3B93F /* Logger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 768E603020249C5400D3B93F /* Logger.framework */; };
-		768E603420249DCC00D3B93F /* Logger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 768E603020249C5400D3B93F /* Logger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		769EC1C02024AD760011DB3A /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769EC1BF2024AD760011DB3A /* UIColorExtensions.swift */; };
-		769EC1C32024ADC10011DB3A /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769EC1C22024ADC10011DB3A /* UIImageExtensions.swift */; };
 		769EC1C52024AE410011DB3A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 769EC1C42024AE400011DB3A /* README.md */; };
 		769EC1C72024AE9A0011DB3A /* WebSocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769EC1C62024AE9A0011DB3A /* WebSocketService.swift */; };
 		769EC1C92024AEB40011DB3A /* WebSocketServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769EC1C82024AEB40011DB3A /* WebSocketServiceImpl.swift */; };
+		769EC2012024B1000011DB3A /* Logger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 768E603020249C5400D3B93F /* Logger.framework */; };
+		769EC2022024B1000011DB3A /* Logger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 768E603020249C5400D3B93F /* Logger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		769EC2062024B1070011DB3A /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 769EC1F42024B04D0011DB3A /* Common.framework */; };
+		769EC2072024B1070011DB3A /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 769EC1F42024B04D0011DB3A /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,23 +67,45 @@
 			remoteGlobalIDString = 768E601920249C5200D3B93F;
 			remoteInfo = LoggerTests;
 		};
-		768E603520249DCC00D3B93F /* PBXContainerItemProxy */ = {
+		769EC1F32024B04D0011DB3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 769EC1EE2024B04C0011DB3A /* Common.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 769EC1D42024B04C0011DB3A;
+			remoteInfo = Common;
+		};
+		769EC1F52024B04D0011DB3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 769EC1EE2024B04C0011DB3A /* Common.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 769EC1DD2024B04C0011DB3A;
+			remoteInfo = CommonTests;
+		};
+		769EC2032024B1000011DB3A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 768E602A20249C5200D3B93F /* Logger.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 768E600F20249C5200D3B93F;
 			remoteInfo = Logger;
 		};
+		769EC2082024B1070011DB3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 769EC1EE2024B04C0011DB3A /* Common.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 769EC1D32024B04C0011DB3A;
+			remoteInfo = Common;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		768E603720249DCC00D3B93F /* Embed Frameworks */ = {
+		769EC2052024B1000011DB3A /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				768E603420249DCC00D3B93F /* Logger.framework in Embed Frameworks */,
+				769EC2022024B1000011DB3A /* Logger.framework in Embed Frameworks */,
+				769EC2072024B1070011DB3A /* Common.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,9 +129,6 @@
 		7662A1002024784E00E15C63 /* teledu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = teledu.entitlements; sourceTree = "<group>"; };
 		768E5FD8202483B600D3B93F /* BrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
 		768E5FDA202483C800D3B93F /* SysInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SysInfoViewController.swift; sourceTree = "<group>"; };
-		768E5FDD2024848500D3B93F /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
-		768E5FDF2024849700D3B93F /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
-		768E5FE1202484A400D3B93F /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		768E5FE42024857F00D3B93F /* GenericViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericViewController.swift; sourceTree = "<group>"; };
 		768E5FE62024864200D3B93F /* MessagingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingService.swift; sourceTree = "<group>"; };
 		768E5FE92024865600D3B93F /* MessagingServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingServiceImpl.swift; sourceTree = "<group>"; };
@@ -127,11 +143,10 @@
 		768E60022024950000D3B93F /* MessageBoxServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBoxServiceImpl.swift; sourceTree = "<group>"; };
 		768E60042024962D00D3B93F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		768E602A20249C5200D3B93F /* Logger.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Logger.xcodeproj; path = Logger/Logger.xcodeproj; sourceTree = "<group>"; };
-		769EC1BF2024AD760011DB3A /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
-		769EC1C22024ADC10011DB3A /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
 		769EC1C42024AE400011DB3A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		769EC1C62024AE9A0011DB3A /* WebSocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketService.swift; sourceTree = "<group>"; };
 		769EC1C82024AEB40011DB3A /* WebSocketServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketServiceImpl.swift; sourceTree = "<group>"; };
+		769EC1EE2024B04C0011DB3A /* Common.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Common.xcodeproj; path = Common/Common.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +154,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				768E603320249DCC00D3B93F /* Logger.framework in Frameworks */,
+				769EC2012024B1000011DB3A /* Logger.framework in Frameworks */,
+				769EC2062024B1070011DB3A /* Common.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +179,7 @@
 		7662A0C72024778D00E15C63 = {
 			isa = PBXGroup;
 			children = (
+				769EC1EE2024B04C0011DB3A /* Common.xcodeproj */,
 				768E602A20249C5200D3B93F /* Logger.xcodeproj */,
 				7662A0D22024778D00E15C63 /* Source */,
 				7662A0E62024778D00E15C63 /* teleduTests */,
@@ -190,7 +207,6 @@
 				768E5FD32024833400D3B93F /* Tabs */,
 				768E5FFA2024930500D3B93F /* Common */,
 				768E5FE32024856000D3B93F /* CommonUI */,
-				768E5FDC2024846C00D3B93F /* Extensions */,
 				768E5FD2202482EA00D3B93F /* Services */,
 				768E5FD0202482CA00D3B93F /* Messaging */,
 				768E5FEB2024866600D3B93F /* System */,
@@ -295,18 +311,6 @@
 			path = SysInfo;
 			sourceTree = "<group>";
 		};
-		768E5FDC2024846C00D3B93F /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				768E5FDD2024848500D3B93F /* ViewControllerExtensions.swift */,
-				768E5FDF2024849700D3B93F /* ViewExtensions.swift */,
-				768E5FE1202484A400D3B93F /* StringExtensions.swift */,
-				769EC1BF2024AD760011DB3A /* UIColorExtensions.swift */,
-				769EC1C22024ADC10011DB3A /* UIImageExtensions.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		768E5FE32024856000D3B93F /* CommonUI */ = {
 			isa = PBXGroup;
 			children = (
@@ -389,6 +393,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		769EC1EF2024B04C0011DB3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				769EC1F42024B04D0011DB3A /* Common.framework */,
+				769EC1F62024B04D0011DB3A /* CommonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -399,12 +412,13 @@
 				7662A0CC2024778D00E15C63 /* Sources */,
 				7662A0CD2024778D00E15C63 /* Frameworks */,
 				7662A0CE2024778D00E15C63 /* Resources */,
-				768E603720249DCC00D3B93F /* Embed Frameworks */,
+				769EC2052024B1000011DB3A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				768E603620249DCC00D3B93F /* PBXTargetDependency */,
+				769EC2042024B1000011DB3A /* PBXTargetDependency */,
+				769EC2092024B1070011DB3A /* PBXTargetDependency */,
 			);
 			name = teledu;
 			productName = teledu;
@@ -491,6 +505,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 769EC1EF2024B04C0011DB3A /* Products */;
+					ProjectRef = 769EC1EE2024B04C0011DB3A /* Common.xcodeproj */;
+				},
+				{
 					ProductGroup = 768E602B20249C5200D3B93F /* Products */;
 					ProjectRef = 768E602A20249C5200D3B93F /* Logger.xcodeproj */;
 				},
@@ -517,6 +535,20 @@
 			fileType = wrapper.cfbundle;
 			path = LoggerTests.xctest;
 			remoteRef = 768E603120249C5400D3B93F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		769EC1F42024B04D0011DB3A /* Common.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Common.framework;
+			remoteRef = 769EC1F32024B04D0011DB3A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		769EC1F62024B04D0011DB3A /* CommonTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CommonTests.xctest;
+			remoteRef = 769EC1F52024B04D0011DB3A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -555,14 +587,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				768E6000202494D300D3B93F /* MessageBoxService.swift in Sources */,
-				769EC1C32024ADC10011DB3A /* UIImageExtensions.swift in Sources */,
 				768E5FE52024857F00D3B93F /* GenericViewController.swift in Sources */,
 				768E5FF9202489AF00D3B93F /* ServiceContextInjectable.swift in Sources */,
-				768E5FE2202484A400D3B93F /* StringExtensions.swift in Sources */,
 				768E5FF32024884300D3B93F /* ServiceContext.swift in Sources */,
 				7662A0D82024778D00E15C63 /* DrawingViewController.swift in Sources */,
 				768E5FF72024898400D3B93F /* ApplicationServiceContext.swift in Sources */,
-				768E5FE02024849700D3B93F /* ViewExtensions.swift in Sources */,
 				768E5FF12024871300D3B93F /* BaseService.swift in Sources */,
 				768E5FEA2024865600D3B93F /* MessagingServiceImpl.swift in Sources */,
 				768E5FD9202483B600D3B93F /* BrowserViewController.swift in Sources */,
@@ -571,9 +600,7 @@
 				768E5FDB202483C800D3B93F /* SysInfoViewController.swift in Sources */,
 				769EC1C92024AEB40011DB3A /* WebSocketServiceImpl.swift in Sources */,
 				768E5FEF202486BF00D3B93F /* Service.swift in Sources */,
-				769EC1C02024AD760011DB3A /* UIColorExtensions.swift in Sources */,
 				768E5FFC2024932000D3B93F /* CommonTypes.swift in Sources */,
-				768E5FDE2024848500D3B93F /* ViewControllerExtensions.swift in Sources */,
 				768E5FE72024864200D3B93F /* MessagingService.swift in Sources */,
 				769EC1C72024AE9A0011DB3A /* WebSocketService.swift in Sources */,
 				7662A0D62024778D00E15C63 /* PagerViewController.swift in Sources */,
@@ -610,10 +637,15 @@
 			target = 7662A0CF2024778D00E15C63 /* teledu */;
 			targetProxy = 7662A0EF2024778D00E15C63 /* PBXContainerItemProxy */;
 		};
-		768E603620249DCC00D3B93F /* PBXTargetDependency */ = {
+		769EC2042024B1000011DB3A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Logger;
-			targetProxy = 768E603520249DCC00D3B93F /* PBXContainerItemProxy */;
+			targetProxy = 769EC2032024B1000011DB3A /* PBXContainerItemProxy */;
+		};
+		769EC2092024B1070011DB3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Common;
+			targetProxy = 769EC2082024B1070011DB3A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -737,6 +769,7 @@
 		7662A0F82024778D00E15C63 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
@@ -754,6 +787,7 @@
 		7662A0F92024778D00E15C63 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
