@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7662A0D42024778D00E15C63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662A0D32024778D00E15C63 /* AppDelegate.swift */; };
+		7662A0D62024778D00E15C63 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662A0D52024778D00E15C63 /* FirstViewController.swift */; };
+		7662A0D82024778D00E15C63 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662A0D72024778D00E15C63 /* SecondViewController.swift */; };
+		7662A0DB2024778D00E15C63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7662A0D92024778D00E15C63 /* Main.storyboard */; };
+		7662A0DD2024778D00E15C63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7662A0DC2024778D00E15C63 /* Assets.xcassets */; };
+		7662A0E82024778D00E15C63 /* teleduTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662A0E72024778D00E15C63 /* teleduTests.swift */; };
+		7662A0F32024778D00E15C63 /* teleduUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662A0F22024778D00E15C63 /* teleduUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7662A0E42024778D00E15C63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7662A0C82024778D00E15C63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7662A0CF2024778D00E15C63;
+			remoteInfo = teledu;
+		};
+		7662A0EF2024778D00E15C63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7662A0C82024778D00E15C63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7662A0CF2024778D00E15C63;
+			remoteInfo = teledu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7662A0D02024778D00E15C63 /* teledu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = teledu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7662A0D32024778D00E15C63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7662A0D52024778D00E15C63 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		7662A0D72024778D00E15C63 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		7662A0DA2024778D00E15C63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7662A0DC2024778D00E15C63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7662A0DE2024778D00E15C63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7662A0E32024778D00E15C63 /* teleduTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = teleduTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7662A0E72024778D00E15C63 /* teleduTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teleduTests.swift; sourceTree = "<group>"; };
+		7662A0E92024778D00E15C63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7662A0EE2024778D00E15C63 /* teleduUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = teleduUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7662A0F22024778D00E15C63 /* teleduUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teleduUITests.swift; sourceTree = "<group>"; };
+		7662A0F42024778D00E15C63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7662A1002024784E00E15C63 /* teledu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = teledu.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7662A0CD2024778D00E15C63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7662A0E02024778D00E15C63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7662A0EB2024778D00E15C63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7662A0C72024778D00E15C63 = {
+			isa = PBXGroup;
+			children = (
+				7662A0D22024778D00E15C63 /* teledu */,
+				7662A0E62024778D00E15C63 /* teleduTests */,
+				7662A0F12024778D00E15C63 /* teleduUITests */,
+				7662A0D12024778D00E15C63 /* Products */,
+				7662A1012024784E00E15C63 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7662A0D12024778D00E15C63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7662A0D02024778D00E15C63 /* teledu.app */,
+				7662A0E32024778D00E15C63 /* teleduTests.xctest */,
+				7662A0EE2024778D00E15C63 /* teleduUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7662A0D22024778D00E15C63 /* teledu */ = {
+			isa = PBXGroup;
+			children = (
+				7662A1002024784E00E15C63 /* teledu.entitlements */,
+				7662A0D32024778D00E15C63 /* AppDelegate.swift */,
+				7662A0D52024778D00E15C63 /* FirstViewController.swift */,
+				7662A0D72024778D00E15C63 /* SecondViewController.swift */,
+				7662A0D92024778D00E15C63 /* Main.storyboard */,
+				7662A0DC2024778D00E15C63 /* Assets.xcassets */,
+				7662A0DE2024778D00E15C63 /* Info.plist */,
+			);
+			path = teledu;
+			sourceTree = "<group>";
+		};
+		7662A0E62024778D00E15C63 /* teleduTests */ = {
+			isa = PBXGroup;
+			children = (
+				7662A0E72024778D00E15C63 /* teleduTests.swift */,
+				7662A0E92024778D00E15C63 /* Info.plist */,
+			);
+			path = teleduTests;
+			sourceTree = "<group>";
+		};
+		7662A0F12024778D00E15C63 /* teleduUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7662A0F22024778D00E15C63 /* teleduUITests.swift */,
+				7662A0F42024778D00E15C63 /* Info.plist */,
+			);
+			path = teleduUITests;
+			sourceTree = "<group>";
+		};
+		7662A1012024784E00E15C63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7662A0CF2024778D00E15C63 /* teledu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7662A0F72024778D00E15C63 /* Build configuration list for PBXNativeTarget "teledu" */;
+			buildPhases = (
+				7662A0CC2024778D00E15C63 /* Sources */,
+				7662A0CD2024778D00E15C63 /* Frameworks */,
+				7662A0CE2024778D00E15C63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = teledu;
+			productName = teledu;
+			productReference = 7662A0D02024778D00E15C63 /* teledu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7662A0E22024778D00E15C63 /* teleduTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7662A0FA2024778D00E15C63 /* Build configuration list for PBXNativeTarget "teleduTests" */;
+			buildPhases = (
+				7662A0DF2024778D00E15C63 /* Sources */,
+				7662A0E02024778D00E15C63 /* Frameworks */,
+				7662A0E12024778D00E15C63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7662A0E52024778D00E15C63 /* PBXTargetDependency */,
+			);
+			name = teleduTests;
+			productName = teleduTests;
+			productReference = 7662A0E32024778D00E15C63 /* teleduTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7662A0ED2024778D00E15C63 /* teleduUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7662A0FD2024778D00E15C63 /* Build configuration list for PBXNativeTarget "teleduUITests" */;
+			buildPhases = (
+				7662A0EA2024778D00E15C63 /* Sources */,
+				7662A0EB2024778D00E15C63 /* Frameworks */,
+				7662A0EC2024778D00E15C63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7662A0F02024778D00E15C63 /* PBXTargetDependency */,
+			);
+			name = teleduUITests;
+			productName = teleduUITests;
+			productReference = 7662A0EE2024778D00E15C63 /* teleduUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7662A0C82024778D00E15C63 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = lexiko.me;
+				TargetAttributes = {
+					7662A0CF2024778D00E15C63 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HomeKit = {
+								enabled = 0;
+							};
+						};
+					};
+					7662A0E22024778D00E15C63 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7662A0CF2024778D00E15C63;
+					};
+					7662A0ED2024778D00E15C63 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7662A0CF2024778D00E15C63;
+					};
+				};
+			};
+			buildConfigurationList = 7662A0CB2024778D00E15C63 /* Build configuration list for PBXProject "teledu" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7662A0C72024778D00E15C63;
+			productRefGroup = 7662A0D12024778D00E15C63 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7662A0CF2024778D00E15C63 /* teledu */,
+				7662A0E22024778D00E15C63 /* teleduTests */,
+				7662A0ED2024778D00E15C63 /* teleduUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7662A0CE2024778D00E15C63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7662A0DD2024778D00E15C63 /* Assets.xcassets in Resources */,
+				7662A0DB2024778D00E15C63 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7662A0E12024778D00E15C63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7662A0EC2024778D00E15C63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7662A0CC2024778D00E15C63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7662A0D82024778D00E15C63 /* SecondViewController.swift in Sources */,
+				7662A0D42024778D00E15C63 /* AppDelegate.swift in Sources */,
+				7662A0D62024778D00E15C63 /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7662A0DF2024778D00E15C63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7662A0E82024778D00E15C63 /* teleduTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7662A0EA2024778D00E15C63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7662A0F32024778D00E15C63 /* teleduUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7662A0E52024778D00E15C63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7662A0CF2024778D00E15C63 /* teledu */;
+			targetProxy = 7662A0E42024778D00E15C63 /* PBXContainerItemProxy */;
+		};
+		7662A0F02024778D00E15C63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7662A0CF2024778D00E15C63 /* teledu */;
+			targetProxy = 7662A0EF2024778D00E15C63 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7662A0D92024778D00E15C63 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7662A0DA2024778D00E15C63 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7662A0F52024778D00E15C63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		7662A0F62024778D00E15C63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7662A0F82024778D00E15C63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 993MB69NQU;
+				INFOPLIST_FILE = teledu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.lexiko.teledu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		7662A0F92024778D00E15C63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 993MB69NQU;
+				INFOPLIST_FILE = teledu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.lexiko.teledu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Release;
+		};
+		7662A0FB2024778D00E15C63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 993MB69NQU;
+				INFOPLIST_FILE = teleduTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.lexiko.teleduTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/teledu.app/teledu";
+			};
+			name = Debug;
+		};
+		7662A0FC2024778D00E15C63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 993MB69NQU;
+				INFOPLIST_FILE = teleduTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.lexiko.teleduTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/teledu.app/teledu";
+			};
+			name = Release;
+		};
+		7662A0FE2024778D00E15C63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 993MB69NQU;
+				INFOPLIST_FILE = teleduUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.lexiko.teleduUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = teledu;
+			};
+			name = Debug;
+		};
+		7662A0FF2024778D00E15C63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 993MB69NQU;
+				INFOPLIST_FILE = teleduUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.lexiko.teleduUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = teledu;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7662A0CB2024778D00E15C63 /* Build configuration list for PBXProject "teledu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7662A0F52024778D00E15C63 /* Debug */,
+				7662A0F62024778D00E15C63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7662A0F72024778D00E15C63 /* Build configuration list for PBXNativeTarget "teledu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7662A0F82024778D00E15C63 /* Debug */,
+				7662A0F92024778D00E15C63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7662A0FA2024778D00E15C63 /* Build configuration list for PBXNativeTarget "teleduTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7662A0FB2024778D00E15C63 /* Debug */,
+				7662A0FC2024778D00E15C63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7662A0FD2024778D00E15C63 /* Build configuration list for PBXNativeTarget "teleduUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7662A0FE2024778D00E15C63 /* Debug */,
+				7662A0FF2024778D00E15C63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7662A0C82024778D00E15C63 /* Project object */;
+}
