@@ -1,5 +1,5 @@
-Teledu - Apple TV Application
------------------------------
+Teledu - Apple TV Application 4 Home Hub
+----------------------------------------
 
 Tabbeb interface
 ----------------
