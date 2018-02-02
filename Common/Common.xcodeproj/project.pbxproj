@@ -13,6 +13,7 @@
 		769EC1FA2024B0890011DB3A /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769EC1F92024B0890011DB3A /* ServiceLocator.swift */; };
 		769EC1FC2024B09D0011DB3A /* ViewLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769EC1FB2024B09D0011DB3A /* ViewLocator.swift */; };
 		769EC2112024D1420011DB3A /* NSObjectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769EC2102024D1410011DB3A /* NSObjectExtensions.swift */; };
+		76E32BBB2024E51100AD4044 /* CommonTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E32BBA2024E51100AD4044 /* CommonTypes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		769EC20D2024CEB90011DB3A /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		769EC20E2024CEB90011DB3A /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
 		769EC2102024D1410011DB3A /* NSObjectExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtensions.swift; sourceTree = "<group>"; };
+		76E32BBA2024E51100AD4044 /* CommonTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTypes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		769EC1D62024B04C0011DB3A /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				769EC2132024D37E0011DB3A /* Types */,
 				769EC20F2024CEB90011DB3A /* Extensions */,
 				769EC1F72024B06B0011DB3A /* ServiceLocator */,
 				769EC1F82024B0740011DB3A /* ViewLocator */,
@@ -127,6 +130,14 @@
 				769EC20E2024CEB90011DB3A /* UIImageExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		769EC2132024D37E0011DB3A /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				76E32BBA2024E51100AD4044 /* CommonTypes.swift */,
+			);
+			path = Types;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +253,7 @@
 			files = (
 				769EC2112024D1420011DB3A /* NSObjectExtensions.swift in Sources */,
 				769EC1FA2024B0890011DB3A /* ServiceLocator.swift in Sources */,
+				76E32BBB2024E51100AD4044 /* CommonTypes.swift in Sources */,
 				769EC1FC2024B09D0011DB3A /* ViewLocator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

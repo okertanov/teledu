@@ -34,8 +34,9 @@ class Bootstrapper {
     fileprivate func initializeUiImpl() -> UIWindow? {
         guard let keyWindow = UIApplication.shared.keyWindow else {
             let window = UIWindow(frame: UIScreen.main.bounds)
-            let rootVc = ViewLocator.locateVC()
+            let rootVc = ViewLocator.locateVC(PagerViewController())
             window.rootViewController = rootVc
+            return window
         }
         return keyWindow
     }
