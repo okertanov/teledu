@@ -32,6 +32,8 @@
 		768E6000202494D300D3B93F /* MessageBoxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E5FFF202494D300D3B93F /* MessageBoxService.swift */; };
 		768E60032024950000D3B93F /* MessageBoxServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E60022024950000D3B93F /* MessageBoxServiceImpl.swift */; };
 		768E60052024962D00D3B93F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 768E60042024962D00D3B93F /* README.md */; };
+		768E603320249DCC00D3B93F /* Logger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 768E603020249C5400D3B93F /* Logger.framework */; };
+		768E603420249DCC00D3B93F /* Logger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 768E603020249C5400D3B93F /* Logger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +51,42 @@
 			remoteGlobalIDString = 7662A0CF2024778D00E15C63;
 			remoteInfo = teledu;
 		};
+		768E602F20249C5400D3B93F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 768E602A20249C5200D3B93F /* Logger.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 768E601020249C5200D3B93F;
+			remoteInfo = Logger;
+		};
+		768E603120249C5400D3B93F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 768E602A20249C5200D3B93F /* Logger.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 768E601920249C5200D3B93F;
+			remoteInfo = LoggerTests;
+		};
+		768E603520249DCC00D3B93F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 768E602A20249C5200D3B93F /* Logger.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 768E600F20249C5200D3B93F;
+			remoteInfo = Logger;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		768E603720249DCC00D3B93F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				768E603420249DCC00D3B93F /* Logger.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7662A0D02024778D00E15C63 /* teledu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = teledu.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +121,7 @@
 		768E5FFF202494D300D3B93F /* MessageBoxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBoxService.swift; sourceTree = "<group>"; };
 		768E60022024950000D3B93F /* MessageBoxServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBoxServiceImpl.swift; sourceTree = "<group>"; };
 		768E60042024962D00D3B93F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		768E602A20249C5200D3B93F /* Logger.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Logger.xcodeproj; path = Logger/Logger.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				768E603320249DCC00D3B93F /* Logger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +153,8 @@
 		7662A0C72024778D00E15C63 = {
 			isa = PBXGroup;
 			children = (
-				7662A0D22024778D00E15C63 /* teledu */,
+				768E602A20249C5200D3B93F /* Logger.xcodeproj */,
+				7662A0D22024778D00E15C63 /* Source */,
 				7662A0E62024778D00E15C63 /* teleduTests */,
 				7662A0F12024778D00E15C63 /* teleduUITests */,
 				7662A0D12024778D00E15C63 /* Products */,
@@ -132,7 +172,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7662A0D22024778D00E15C63 /* teledu */ = {
+		7662A0D22024778D00E15C63 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				768E5FD1202482DA00D3B93F /* External */,
@@ -148,7 +188,7 @@
 				7662A0DC2024778D00E15C63 /* Assets.xcassets */,
 				7662A0DE2024778D00E15C63 /* Info.plist */,
 			);
-			path = teledu;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		7662A0E62024778D00E15C63 /* teleduTests */ = {
@@ -325,6 +365,15 @@
 			path = Impl;
 			sourceTree = "<group>";
 		};
+		768E602B20249C5200D3B93F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				768E603020249C5400D3B93F /* Logger.framework */,
+				768E603220249C5400D3B93F /* LoggerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -335,10 +384,12 @@
 				7662A0CC2024778D00E15C63 /* Sources */,
 				7662A0CD2024778D00E15C63 /* Frameworks */,
 				7662A0CE2024778D00E15C63 /* Resources */,
+				768E603720249DCC00D3B93F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				768E603620249DCC00D3B93F /* PBXTargetDependency */,
 			);
 			name = teledu;
 			productName = teledu;
@@ -423,6 +474,12 @@
 			mainGroup = 7662A0C72024778D00E15C63;
 			productRefGroup = 7662A0D12024778D00E15C63 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 768E602B20249C5200D3B93F /* Products */;
+					ProjectRef = 768E602A20249C5200D3B93F /* Logger.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				7662A0CF2024778D00E15C63 /* teledu */,
@@ -431,6 +488,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		768E603020249C5400D3B93F /* Logger.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Logger.framework;
+			remoteRef = 768E602F20249C5400D3B93F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		768E603220249C5400D3B93F /* LoggerTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = LoggerTests.xctest;
+			remoteRef = 768E603120249C5400D3B93F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7662A0CE2024778D00E15C63 /* Resources */ = {
@@ -515,6 +589,11 @@
 			isa = PBXTargetDependency;
 			target = 7662A0CF2024778D00E15C63 /* teledu */;
 			targetProxy = 7662A0EF2024778D00E15C63 /* PBXContainerItemProxy */;
+		};
+		768E603620249DCC00D3B93F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Logger;
+			targetProxy = 768E603520249DCC00D3B93F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -642,7 +721,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 993MB69NQU;
-				INFOPLIST_FILE = teledu/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.lexiko.teledu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -659,7 +738,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 993MB69NQU;
-				INFOPLIST_FILE = teledu/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.lexiko.teledu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
