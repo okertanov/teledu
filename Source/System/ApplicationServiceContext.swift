@@ -8,18 +8,18 @@ import Foundation
 class ApplicationServiceContext: ServiceContext {
     fileprivate var services: [AnyHashable: Service] = [:]
     
-    func register<T>(_ service: T) where T : Service {
+    func register<T>(_ type: ServiceMetaType, _ service: T) where T : Service {
         let typeOfService = String.init(describing: service)
         services[typeOfService] = service
     }
     
-    func registerMany<T>(_ services: [T]) where T : Service {
+    func registerMany<T>(_ type: ServiceMetaType, _ services: [T]) where T : Service {
         for service in services {
-            register(service)
+            register(type, service)
         }
     }
     
-    func resolve<T: Service>(_ type: ServiceContext.ServiceMetaType) -> T? {
+    func resolve<T: Service>(_ type: ServiceMetaType) -> T? {
         var resolvedServices: [Service] = []
         for service in services {
             let typeOfService = String.init(describing: service)
@@ -30,7 +30,7 @@ class ApplicationServiceContext: ServiceContext {
         return resolvedServices.last as? T
     }
     
-    func resolveAll<T: Service>(_ type: ServiceContext.ServiceMetaType) -> [T]? {
+    func resolveAll<T: Service>(_ type: ServiceMetaType) -> [T]? {
         var resolvedServices: [Service] = []
         for service in services {
             let typeOfService = String.init(describing: service)
@@ -42,5 +42,6 @@ class ApplicationServiceContext: ServiceContext {
     }
     
     func inject(_ target: ServiceContextInjectable) {
+        target.inject(self)
     }
 }

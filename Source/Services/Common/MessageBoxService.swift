@@ -5,6 +5,6 @@
 
 import Foundation
 
-public protocol MessageBoxService: Service {
+@objc public protocol MessageBoxService: Service {
     
 }

@@ -5,6 +5,6 @@
 
 import Foundation
 
-@objc public protocol Service : class {
+class WebSocketServiceImpl : WebSocketService {
+    
 }
-

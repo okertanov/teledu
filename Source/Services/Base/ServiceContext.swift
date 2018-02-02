@@ -6,13 +6,13 @@
 import Foundation
 
 public protocol ServiceContext : class {
-    typealias ServiceMetaType = Service.Type
+    typealias ServiceMetaType = Protocol
     
-    func register<T: Service>(_ service: T)
-    func registerMany<T>(_ services: [T]) where T : Service
+    func register<T: Service>(_ type: ServiceMetaType, _ service: T)
+    func registerMany<T>(_ type: ServiceMetaType, _ services: [T]) where T : Service
     
     func resolve<T: Service>(_ type: ServiceMetaType) -> T?
-    func resolveAll<T: Service>(_ type: ServiceContext.ServiceMetaType) -> [T]?
+    func resolveAll<T: Service>(_ type: ServiceMetaType) -> [T]?
     
     func inject(_ target: ServiceContextInjectable)
 }

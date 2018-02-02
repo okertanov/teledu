@@ -4,7 +4,7 @@
 //
 
 import Foundation
+import UIKit
 
-@objc public protocol Service : class {
+public extension UIColor {
 }
-

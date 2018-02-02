@@ -34,6 +34,11 @@
 		768E60052024962D00D3B93F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 768E60042024962D00D3B93F /* README.md */; };
 		768E603320249DCC00D3B93F /* Logger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 768E603020249C5400D3B93F /* Logger.framework */; };
 		768E603420249DCC00D3B93F /* Logger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 768E603020249C5400D3B93F /* Logger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		769EC1C02024AD760011DB3A /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769EC1BF2024AD760011DB3A /* UIColorExtensions.swift */; };
+		769EC1C32024ADC10011DB3A /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769EC1C22024ADC10011DB3A /* UIImageExtensions.swift */; };
+		769EC1C52024AE410011DB3A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 769EC1C42024AE400011DB3A /* README.md */; };
+		769EC1C72024AE9A0011DB3A /* WebSocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769EC1C62024AE9A0011DB3A /* WebSocketService.swift */; };
+		769EC1C92024AEB40011DB3A /* WebSocketServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769EC1C82024AEB40011DB3A /* WebSocketServiceImpl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +127,11 @@
 		768E60022024950000D3B93F /* MessageBoxServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBoxServiceImpl.swift; sourceTree = "<group>"; };
 		768E60042024962D00D3B93F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		768E602A20249C5200D3B93F /* Logger.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Logger.xcodeproj; path = Logger/Logger.xcodeproj; sourceTree = "<group>"; };
+		769EC1BF2024AD760011DB3A /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		769EC1C22024ADC10011DB3A /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
+		769EC1C42024AE400011DB3A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		769EC1C62024AE9A0011DB3A /* WebSocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketService.swift; sourceTree = "<group>"; };
+		769EC1C82024AEB40011DB3A /* WebSocketServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketServiceImpl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +169,7 @@
 				7662A0F12024778D00E15C63 /* teleduUITests */,
 				7662A0D12024778D00E15C63 /* Products */,
 				7662A1012024784E00E15C63 /* Frameworks */,
+				769EC1C42024AE400011DB3A /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -290,6 +301,8 @@
 				768E5FDD2024848500D3B93F /* ViewControllerExtensions.swift */,
 				768E5FDF2024849700D3B93F /* ViewExtensions.swift */,
 				768E5FE1202484A400D3B93F /* StringExtensions.swift */,
+				769EC1BF2024AD760011DB3A /* UIColorExtensions.swift */,
+				769EC1C22024ADC10011DB3A /* UIImageExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -343,6 +356,7 @@
 			isa = PBXGroup;
 			children = (
 				768E5FFF202494D300D3B93F /* MessageBoxService.swift */,
+				769EC1C62024AE9A0011DB3A /* WebSocketService.swift */,
 				768E6001202494EF00D3B93F /* Impl */,
 			);
 			path = Common;
@@ -361,6 +375,7 @@
 			isa = PBXGroup;
 			children = (
 				768E60022024950000D3B93F /* MessageBoxServiceImpl.swift */,
+				769EC1C82024AEB40011DB3A /* WebSocketServiceImpl.swift */,
 			);
 			path = Impl;
 			sourceTree = "<group>";
@@ -513,6 +528,7 @@
 			files = (
 				768E60052024962D00D3B93F /* README.md in Resources */,
 				7662A0DD2024778D00E15C63 /* Assets.xcassets in Resources */,
+				769EC1C52024AE410011DB3A /* README.md in Resources */,
 				7662A0DB2024778D00E15C63 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -539,6 +555,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				768E6000202494D300D3B93F /* MessageBoxService.swift in Sources */,
+				769EC1C32024ADC10011DB3A /* UIImageExtensions.swift in Sources */,
 				768E5FE52024857F00D3B93F /* GenericViewController.swift in Sources */,
 				768E5FF9202489AF00D3B93F /* ServiceContextInjectable.swift in Sources */,
 				768E5FE2202484A400D3B93F /* StringExtensions.swift in Sources */,
@@ -552,10 +569,13 @@
 				768E5FED2024869300D3B93F /* Bootstrapper.swift in Sources */,
 				7662A0D42024778D00E15C63 /* AppDelegate.swift in Sources */,
 				768E5FDB202483C800D3B93F /* SysInfoViewController.swift in Sources */,
+				769EC1C92024AEB40011DB3A /* WebSocketServiceImpl.swift in Sources */,
 				768E5FEF202486BF00D3B93F /* Service.swift in Sources */,
+				769EC1C02024AD760011DB3A /* UIColorExtensions.swift in Sources */,
 				768E5FFC2024932000D3B93F /* CommonTypes.swift in Sources */,
 				768E5FDE2024848500D3B93F /* ViewControllerExtensions.swift in Sources */,
 				768E5FE72024864200D3B93F /* MessagingService.swift in Sources */,
+				769EC1C72024AE9A0011DB3A /* WebSocketService.swift in Sources */,
 				7662A0D62024778D00E15C63 /* PagerViewController.swift in Sources */,
 				768E60032024950000D3B93F /* MessageBoxServiceImpl.swift in Sources */,
 			);
