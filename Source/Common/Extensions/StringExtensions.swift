@@ -28,7 +28,7 @@ public extension Optional where Wrapped: StringType {
 public extension String {
     func truncate(length: Int, trailing: String = "\u{2026}") -> String {
         if self.count > length {
-            return String(self.characters.prefix(length)) + trailing
+            return String(self.prefix(length)) + trailing
         }
         else {
             return self

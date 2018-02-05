@@ -6,8 +6,8 @@
 import Foundation
 import UIKit
 
-open extension UIViewController {
-    open func setTabBarVisible(_ visible: Bool) {
+public extension UIViewController {
+    public func setTabBarVisible(_ visible: Bool) {
         self.tabBarController?.tabBar.isHidden = !visible
     }
 }

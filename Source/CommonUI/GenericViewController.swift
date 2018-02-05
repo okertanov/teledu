@@ -5,7 +5,6 @@
 
 import Foundation
 import UIKit
-import Common
 
 open class GenericViewController: UIViewController {
     override open func viewDidLoad() {
