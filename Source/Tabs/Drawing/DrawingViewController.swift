@@ -7,4 +7,11 @@ import Foundation
 import UIKit
 
 class DrawingViewController: GenericViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
 }

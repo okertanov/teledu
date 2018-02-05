@@ -15,16 +15,20 @@ class RootTabBarController: UITabBarController, UITabBarControllerDelegate, Acti
         }
         set {
             (model as! RootTabBarViewModel).selectedIndex = newValue
+            super.selectedIndex = newValue
         }
     }
     
     override open func viewDidLoad() {
         super.viewDidLoad()
+        
         delegate = self
-    }
-    
-    override func setViewControllers(_ viewControllers: [UIViewController]?, animated: Bool) {
-        super.setViewControllers(viewControllers, animated: animated)
+
+        let vc1 = ViewLocator.locateVC(PagerViewController.self, PagerViewModel.self)!
+        let vc2 = ViewLocator.locateVC(DrawingViewController.self, DrawingViewModel.self)!
+        let newViewControllers = [vc1, vc2]
+
+        setViewControllers(newViewControllers, animated: false)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -32,9 +36,6 @@ class RootTabBarController: UITabBarController, UITabBarControllerDelegate, Acti
     
     public func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
         return true
-    }
-    
-    public func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
     }
     
     public func inject(_ model: ViewModel) {

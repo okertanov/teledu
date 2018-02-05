@@ -5,6 +5,5 @@
 
 import Foundation
 
-class RootTabBarViewModel: ViewModel {
-    var selectedIndex: Int = 0
+class DrawingViewModel: ViewModel {
 }

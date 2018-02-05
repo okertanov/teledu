@@ -5,6 +5,5 @@
 
 import Foundation
 
-class PagerViewModel : ViewModel {
-    
+class PagerViewModel: ViewModel {
 }

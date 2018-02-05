@@ -23,6 +23,7 @@
 		76157DAC2028842C0027EB87 /* Activator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76157DAB2028842C0027EB87 /* Activator.swift */; };
 		76157DAE20288B940027EB87 /* Activable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76157DAD20288B940027EB87 /* Activable.swift */; };
 		76157DB0202891090027EB87 /* RootTabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76157DAF202891090027EB87 /* RootTabBarViewModel.swift */; };
+		76157DB22028A2990027EB87 /* DrawingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76157DB12028A2980027EB87 /* DrawingViewModel.swift */; };
 		7662A0D42024778D00E15C63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662A0D32024778D00E15C63 /* AppDelegate.swift */; };
 		7662A0D62024778D00E15C63 /* PagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662A0D52024778D00E15C63 /* PagerViewController.swift */; };
 		7662A0D82024778D00E15C63 /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662A0D72024778D00E15C63 /* DrawingViewController.swift */; };
@@ -94,6 +95,7 @@
 		76157DAB2028842C0027EB87 /* Activator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activator.swift; sourceTree = "<group>"; };
 		76157DAD20288B940027EB87 /* Activable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activable.swift; sourceTree = "<group>"; };
 		76157DAF202891090027EB87 /* RootTabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarViewModel.swift; sourceTree = "<group>"; };
+		76157DB12028A2980027EB87 /* DrawingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewModel.swift; sourceTree = "<group>"; };
 		7662A0D02024778D00E15C63 /* teledu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = teledu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7662A0D32024778D00E15C63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7662A0D52024778D00E15C63 /* PagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerViewController.swift; sourceTree = "<group>"; };
@@ -326,6 +328,7 @@
 			isa = PBXGroup;
 			children = (
 				7662A0D72024778D00E15C63 /* DrawingViewController.swift */,
+				76157DB12028A2980027EB87 /* DrawingViewModel.swift */,
 			);
 			path = Drawing;
 			sourceTree = "<group>";
@@ -584,6 +587,7 @@
 				768E5FE72024864200D3B93F /* MessagingService.swift in Sources */,
 				769EC1C72024AE9A0011DB3A /* WebSocketService.swift in Sources */,
 				7662A0D62024778D00E15C63 /* PagerViewController.swift in Sources */,
+				76157DB22028A2990027EB87 /* DrawingViewModel.swift in Sources */,
 				76157D9D202869F50027EB87 /* ViewControllerExtensions.swift in Sources */,
 				768E60032024950000D3B93F /* MessageBoxServiceImpl.swift in Sources */,
 			);
