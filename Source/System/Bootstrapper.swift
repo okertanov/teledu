@@ -34,18 +34,21 @@ class Bootstrapper {
     fileprivate func initializeUiImpl() -> UIWindow? {
         guard let keyWindow = UIApplication.shared.keyWindow else {
             let window = UIWindow(frame: UIScreen.main.bounds)
-            let rootVc = ViewLocator.locateVC(RootTabBarController.self)
+            let rootVc = ViewLocator.locateVC(RootTabBarController.self, RootTabBarViewModel.self)
             window.rootViewController = rootVc
+            window.makeKeyAndVisible()
             return window
         }
         return keyWindow
     }
     
     fileprivate func registerImpl() {
+        ServiceLocator.setContext(serviceContext)
+        
         // TODO: Check conformance A <- B
-        serviceContext.register(MessageBoxService.self, MessageBoxServiceImpl())
-        serviceContext.register(WebSocketService.self, WebSocketServiceImpl())
-        serviceContext.register(MessagingService.self, MessagingServiceImpl())
+        serviceContext.register(MessageBoxService.self, Activator.activate(MessageBoxServiceImpl.self))
+        serviceContext.register(WebSocketService.self, Activator.activate(WebSocketServiceImpl.self))
+        serviceContext.register(MessagingService.self, Activator.activate(MessagingServiceImpl.self))
     }
     
     fileprivate func terminateImpl() {

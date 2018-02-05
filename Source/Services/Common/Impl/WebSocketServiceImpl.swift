@@ -5,6 +5,6 @@
 
 import Foundation
 
-class WebSocketServiceImpl : WebSocketService {
+class WebSocketServiceImpl : BaseService, WebSocketService {
     
 }

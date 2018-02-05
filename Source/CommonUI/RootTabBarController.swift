@@ -6,6 +6,24 @@
 import Foundation
 import UIKit
 
-class RootTabBarController: UITabBarController {
+class RootTabBarController: UITabBarController, UITabBarControllerDelegate, Activable, ViewModelInjectable {
+    open private(set) var model: ViewModel?
     
+    override func setViewControllers(_ viewControllers: [UIViewController]?, animated: Bool) {
+        super.setViewControllers(viewControllers, animated: animated)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    }
+    
+    public func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+        return true
+    }
+    
+    public func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+    }
+    
+    public func inject(_ model: ViewModel) {
+        self.model = model
+    }
 }

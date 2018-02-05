@@ -5,6 +5,6 @@
 
 import Foundation
 
-class MessageBoxServiceImpl : MessageBoxService {
+class MessageBoxServiceImpl : BaseService, MessageBoxService {
     
 }

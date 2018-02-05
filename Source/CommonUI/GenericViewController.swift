@@ -6,10 +6,21 @@
 import Foundation
 import UIKit
 
-open class GenericViewController: UIViewController {
+open class GenericViewController: UIViewController, Activable, ViewModelInjectable {
+    open private(set) var model: ViewModel?
+    
+    convenience init(model: ViewModel) {
+        self.init(nibName: nil, bundle: nil)
+        self.model = model
+    }
+    
     override open func viewDidLoad() {
         super.viewDidLoad()
         
         setTabBarVisible(true);
+    }
+    
+    public func inject(_ model: ViewModel) {
+        self.model = model
     }
 }
