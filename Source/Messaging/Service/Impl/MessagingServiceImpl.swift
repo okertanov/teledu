@@ -6,4 +6,9 @@
 import Foundation
 
 class MessagingServiceImpl: BaseService, MessagingService {
+    func subscribe(_ channel: String) {
+    }
+    
+    func unsubscribe(_ channel: String) {
+    }
 }

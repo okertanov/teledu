@@ -9,7 +9,7 @@ class ApplicationServiceContext: ServiceContext {
     fileprivate var services: [AnyHashable: Service] = [:]
     
     func register<T: Service>(_ type: ServiceMetaType, _ service: T) {
-        let typeOfService = String.init(describing: service)
+        let typeOfService = String.init(describing: type)
         services[typeOfService] = service
     }
     
@@ -20,14 +20,12 @@ class ApplicationServiceContext: ServiceContext {
     }
     
     func resolve<T: Service>(_ type: ServiceMetaType) -> T? {
+        let typeOfService = String.init(describing: type)
         var resolvedServices: [Service] = []
-        for service in services {
-            let typeOfService = String.init(describing: service)
-            if let resolved = services[typeOfService] {
-                resolvedServices.append(resolved)
-            }
+        if let resolved = services[typeOfService] {
+            return resolved as? T
         }
-        return resolvedServices.last as? T
+        return nil
     }
     
     func resolveAll<T: Service>(_ type: ServiceMetaType) -> [T]? {

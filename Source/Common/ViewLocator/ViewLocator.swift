@@ -7,7 +7,7 @@ import Foundation
 import UIKit
 
 open class ViewLocator {
-    enum DefaultStoryBoards : String {
+    private enum DefaultStoryBoards : String {
         case main = "Main"
         case login = "Login"
     }

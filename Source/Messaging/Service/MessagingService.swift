@@ -6,5 +6,6 @@
 import Foundation
 
 @objc public protocol MessagingService: Service {
-    
+    func subscribe(_ channel: String)
+    func unsubscribe(_ channel: String)
 }
