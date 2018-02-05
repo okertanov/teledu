@@ -7,4 +7,11 @@ import Foundation
 import UIKit
 
 class PagerViewController: GenericViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
 }

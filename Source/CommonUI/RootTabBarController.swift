@@ -9,6 +9,20 @@ import UIKit
 class RootTabBarController: UITabBarController, UITabBarControllerDelegate, Activable, ViewModelInjectable {
     open private(set) var model: ViewModel?
     
+    override var selectedIndex: Int {
+        get {
+            return (model as! RootTabBarViewModel).selectedIndex
+        }
+        set {
+            (model as! RootTabBarViewModel).selectedIndex = newValue
+        }
+    }
+    
+    override open func viewDidLoad() {
+        super.viewDidLoad()
+        delegate = self
+    }
+    
     override func setViewControllers(_ viewControllers: [UIViewController]?, animated: Bool) {
         super.setViewControllers(viewControllers, animated: animated)
     }
