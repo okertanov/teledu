@@ -12,10 +12,22 @@ open class ViewLocator {
         case login = "Login"
     }
     
-    public class func locateVC<T>(_ vcType: T, in storyboard: UIStoryboard? = nil) -> T? {
+    public class func locateVC<T: UIViewController>(_ vcType: T.Type, in storyboard: UIStoryboard? = nil) -> T? {
         let vcName = String(describing: vcType)
         let storyboard = storyboard ?? UIStoryboard.init(name: DefaultStoryBoards.main.rawValue, bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: vcName) as? T
         return vc
+    }
+    
+    public class func locateView<T: UIView>(_ viewType: T.Type, inBundle bundle: Bundle = Bundle.main) -> T? {
+        let viewName = String(describing: viewType)
+        if let objects = bundle.loadNibNamed(viewName, owner: nil) {
+            for object in objects {
+                if let object = object as? T {
+                    return object
+                }
+            }
+        }
+        return nil
     }
 }

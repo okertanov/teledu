@@ -8,12 +8,12 @@ import Foundation
 class ApplicationServiceContext: ServiceContext {
     fileprivate var services: [AnyHashable: Service] = [:]
     
-    func register<T>(_ type: ServiceMetaType, _ service: T) where T : Service {
+    func register<T: Service>(_ type: ServiceMetaType, _ service: T) {
         let typeOfService = String.init(describing: service)
         services[typeOfService] = service
     }
     
-    func registerMany<T>(_ type: ServiceMetaType, _ services: [T]) where T : Service {
+    func registerMany<T: Service>(_ type: ServiceMetaType, _ services: [T]) {
         for service in services {
             register(type, service)
         }

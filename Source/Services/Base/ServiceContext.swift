@@ -9,7 +9,7 @@ public protocol ServiceContext : class {
     typealias ServiceMetaType = Protocol
     
     func register<T: Service>(_ type: ServiceMetaType, _ service: T)
-    func registerMany<T>(_ type: ServiceMetaType, _ services: [T]) where T : Service
+    func registerMany<T: Service>(_ type: ServiceMetaType, _ services: [T])
     
     func resolve<T: Service>(_ type: ServiceMetaType) -> T?
     func resolveAll<T: Service>(_ type: ServiceMetaType) -> [T]?
