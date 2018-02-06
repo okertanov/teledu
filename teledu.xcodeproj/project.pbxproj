@@ -24,6 +24,10 @@
 		76157DAE20288B940027EB87 /* Activable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76157DAD20288B940027EB87 /* Activable.swift */; };
 		76157DB0202891090027EB87 /* RootTabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76157DAF202891090027EB87 /* RootTabBarViewModel.swift */; };
 		76157DB22028A2990027EB87 /* DrawingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76157DB12028A2980027EB87 /* DrawingViewModel.swift */; };
+		7642ED452029CBFC00328659 /* PubNub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7642ED412029CBE600328659 /* PubNub.framework */; };
+		7642ED462029CBFC00328659 /* PubNub.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7642ED412029CBE600328659 /* PubNub.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7642ED4A2029E1A700328659 /* PagerMessageParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7642ED492029E1A700328659 /* PagerMessageParser.swift */; };
+		7642ED4C2029E28C00328659 /* PagerViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7642ED4B2029E28C00328659 /* PagerViewModelTests.swift */; };
 		7662A0D42024778D00E15C63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662A0D32024778D00E15C63 /* AppDelegate.swift */; };
 		7662A0D62024778D00E15C63 /* PagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662A0D52024778D00E15C63 /* PagerViewController.swift */; };
 		7662A0D82024778D00E15C63 /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662A0D72024778D00E15C63 /* DrawingViewController.swift */; };
@@ -73,12 +77,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		769EC2052024B1000011DB3A /* Embed Frameworks */ = {
+		7642ED472029CBFC00328659 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				7642ED462029CBFC00328659 /* PubNub.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +108,9 @@
 		76157DAD20288B940027EB87 /* Activable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activable.swift; sourceTree = "<group>"; };
 		76157DAF202891090027EB87 /* RootTabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarViewModel.swift; sourceTree = "<group>"; };
 		76157DB12028A2980027EB87 /* DrawingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewModel.swift; sourceTree = "<group>"; };
+		7642ED412029CBE600328659 /* PubNub.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PubNub.framework; sourceTree = "<group>"; };
+		7642ED492029E1A700328659 /* PagerMessageParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerMessageParser.swift; sourceTree = "<group>"; };
+		7642ED4B2029E28C00328659 /* PagerViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerViewModelTests.swift; sourceTree = "<group>"; };
 		7662A0D02024778D00E15C63 /* teledu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = teledu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7662A0D32024778D00E15C63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7662A0D52024778D00E15C63 /* PagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +156,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7642ED452029CBFC00328659 /* PubNub.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +238,22 @@
 			path = Activator;
 			sourceTree = "<group>";
 		};
+		7642ED402029CBE600328659 /* PubNub */ = {
+			isa = PBXGroup;
+			children = (
+				7642ED412029CBE600328659 /* PubNub.framework */,
+			);
+			path = PubNub;
+			sourceTree = "<group>";
+		};
+		7642ED482029E18F00328659 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				7642ED492029E1A700328659 /* PagerMessageParser.swift */,
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
 		7662A0C72024778D00E15C63 = {
 			isa = PBXGroup;
 			children = (
@@ -273,6 +298,7 @@
 			children = (
 				7662A0E72024778D00E15C63 /* ActivatorTests.swift */,
 				76992BFD20299F9D0015B52E /* ServiceLocatorTests.swift */,
+				7642ED4B2029E28C00328659 /* PagerViewModelTests.swift */,
 				7662A0E92024778D00E15C63 /* Info.plist */,
 			);
 			path = teleduTests;
@@ -306,6 +332,7 @@
 		768E5FD1202482DA00D3B93F /* External */ = {
 			isa = PBXGroup;
 			children = (
+				7642ED402029CBE600328659 /* PubNub */,
 				768E60042024962D00D3B93F /* README.md */,
 			);
 			path = External;
@@ -335,6 +362,7 @@
 		768E5FD42024834B00D3B93F /* Pager */ = {
 			isa = PBXGroup;
 			children = (
+				7642ED482029E18F00328659 /* Parsers */,
 				7662A0D52024778D00E15C63 /* PagerViewController.swift */,
 				76157DA4202875930027EB87 /* PagerViewModel.swift */,
 				76992C0A2029B3790015B52E /* PagerMessage.swift */,
@@ -447,7 +475,7 @@
 				7662A0CC2024778D00E15C63 /* Sources */,
 				7662A0CD2024778D00E15C63 /* Frameworks */,
 				7662A0CE2024778D00E15C63 /* Resources */,
-				769EC2052024B1000011DB3A /* Embed Frameworks */,
+				7642ED472029CBFC00328659 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -616,6 +644,7 @@
 				76157DB22028A2990027EB87 /* DrawingViewModel.swift in Sources */,
 				76157D9D202869F50027EB87 /* ViewControllerExtensions.swift in Sources */,
 				76992C072029B10B0015B52E /* Invocable.swift in Sources */,
+				7642ED4A2029E1A700328659 /* PagerMessageParser.swift in Sources */,
 				768E60032024950000D3B93F /* MessageBoxServiceImpl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -624,6 +653,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7642ED4C2029E28C00328659 /* PagerViewModelTests.swift in Sources */,
 				76992BFE20299F9D0015B52E /* ServiceLocatorTests.swift in Sources */,
 				7662A0E82024778D00E15C63 /* ActivatorTests.swift in Sources */,
 			);
@@ -772,11 +802,14 @@
 		7662A0F82024778D00E15C63 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 993MB69NQU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Source/External/PubNub",
+				);
 				INFOPLIST_FILE = Source/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.lexiko.teledu;
@@ -790,11 +823,14 @@
 		7662A0F92024778D00E15C63 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 993MB69NQU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Source/External/PubNub",
+				);
 				INFOPLIST_FILE = Source/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.lexiko.teledu;

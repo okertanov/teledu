@@ -6,7 +6,6 @@
 import XCTest
 
 class ServiceLocatorTests: XCTestCase {
-    
     override func setUp() {
         super.setUp()
     }

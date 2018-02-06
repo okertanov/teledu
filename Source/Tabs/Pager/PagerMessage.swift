@@ -20,4 +20,8 @@ extension PagerMessage {
     var isEmpty: Bool {
         get { return self.identifier.isNullOrEmpty }
     }
+    
+    var kpIdentifier: KeyPath<PagerMessage, String> {
+        get { return \PagerMessage.identifier }
+    }
 }
