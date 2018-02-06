@@ -9,6 +9,11 @@ public typealias ActivableServiceContextInjectable = Activable & ServiceContextI
 public typealias ActivableViewModelInjectable = Activable & ViewModelInjectable
 
 public class Activator {
+    public static func activate<T: Activable>(_ type: T.Type) -> T {
+        let instance = type.init()
+        return instance
+    }
+    
     public static func activate<T: ActivableServiceContextInjectable>(_ type: T.Type) -> T {
         let instance = type.init()
         ServiceLocator.getContext().inject(instance)

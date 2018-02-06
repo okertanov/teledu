@@ -29,7 +29,7 @@
 		7662A0D82024778D00E15C63 /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662A0D72024778D00E15C63 /* DrawingViewController.swift */; };
 		7662A0DB2024778D00E15C63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7662A0D92024778D00E15C63 /* Main.storyboard */; };
 		7662A0DD2024778D00E15C63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7662A0DC2024778D00E15C63 /* Assets.xcassets */; };
-		7662A0E82024778D00E15C63 /* teleduTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662A0E72024778D00E15C63 /* teleduTests.swift */; };
+		7662A0E82024778D00E15C63 /* ActivatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662A0E72024778D00E15C63 /* ActivatorTests.swift */; };
 		7662A0F32024778D00E15C63 /* teleduUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662A0F22024778D00E15C63 /* teleduUITests.swift */; };
 		768E5FD9202483B600D3B93F /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E5FD8202483B600D3B93F /* BrowserViewController.swift */; };
 		768E5FDB202483C800D3B93F /* SysInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E5FDA202483C800D3B93F /* SysInfoViewController.swift */; };
@@ -44,6 +44,7 @@
 		768E5FF9202489AF00D3B93F /* ServiceContextInjectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E5FF8202489AF00D3B93F /* ServiceContextInjectable.swift */; };
 		768E6000202494D300D3B93F /* MessageBoxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E5FFF202494D300D3B93F /* MessageBoxService.swift */; };
 		768E60032024950000D3B93F /* MessageBoxServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E60022024950000D3B93F /* MessageBoxServiceImpl.swift */; };
+		76992BFE20299F9D0015B52E /* ServiceLocatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76992BFD20299F9D0015B52E /* ServiceLocatorTests.swift */; };
 		769EC1C72024AE9A0011DB3A /* WebSocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769EC1C62024AE9A0011DB3A /* WebSocketService.swift */; };
 		769EC1C92024AEB40011DB3A /* WebSocketServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769EC1C82024AEB40011DB3A /* WebSocketServiceImpl.swift */; };
 /* End PBXBuildFile section */
@@ -104,7 +105,7 @@
 		7662A0DC2024778D00E15C63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7662A0DE2024778D00E15C63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7662A0E32024778D00E15C63 /* teleduTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = teleduTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7662A0E72024778D00E15C63 /* teleduTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teleduTests.swift; sourceTree = "<group>"; };
+		7662A0E72024778D00E15C63 /* ActivatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivatorTests.swift; sourceTree = "<group>"; };
 		7662A0E92024778D00E15C63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7662A0EE2024778D00E15C63 /* teleduUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = teleduUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7662A0F22024778D00E15C63 /* teleduUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teleduUITests.swift; sourceTree = "<group>"; };
@@ -124,6 +125,7 @@
 		768E5FFF202494D300D3B93F /* MessageBoxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBoxService.swift; sourceTree = "<group>"; };
 		768E60022024950000D3B93F /* MessageBoxServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBoxServiceImpl.swift; sourceTree = "<group>"; };
 		768E60042024962D00D3B93F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		76992BFD20299F9D0015B52E /* ServiceLocatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocatorTests.swift; sourceTree = "<group>"; };
 		769EC1C42024AE400011DB3A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		769EC1C62024AE9A0011DB3A /* WebSocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketService.swift; sourceTree = "<group>"; };
 		769EC1C82024AEB40011DB3A /* WebSocketServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketServiceImpl.swift; sourceTree = "<group>"; };
@@ -257,7 +259,8 @@
 		7662A0E62024778D00E15C63 /* teleduTests */ = {
 			isa = PBXGroup;
 			children = (
-				7662A0E72024778D00E15C63 /* teleduTests.swift */,
+				7662A0E72024778D00E15C63 /* ActivatorTests.swift */,
+				76992BFD20299F9D0015B52E /* ServiceLocatorTests.swift */,
 				7662A0E92024778D00E15C63 /* Info.plist */,
 			);
 			path = teleduTests;
@@ -597,7 +600,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7662A0E82024778D00E15C63 /* teleduTests.swift in Sources */,
+				76992BFE20299F9D0015B52E /* ServiceLocatorTests.swift in Sources */,
+				7662A0E82024778D00E15C63 /* ActivatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
