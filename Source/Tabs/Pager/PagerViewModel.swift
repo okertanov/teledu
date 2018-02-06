@@ -6,17 +6,21 @@
 import Foundation
 
 class PagerViewModel: ViewModel {
+    private enum Channels : String {
+        case pager = "teledu-pager"
+    }
+    
     private lazy var messagingService: MessagingService? = serviceContext?.resolve(MessagingService.self)
     
     public required init() {
         super.init()
     }
     
-    func subscribe(to channel: String) {
-        messagingService?.subscribe(channel)
+    func subscribe() {
+        messagingService?.subscribe(Channels.pager.rawValue)
     }
     
-    func unsubscribe(from channel: String) {
-        messagingService?.unsubscribe(channel)
+    func unsubscribe() {
+        messagingService?.unsubscribe(Channels.pager.rawValue)
     }
 }

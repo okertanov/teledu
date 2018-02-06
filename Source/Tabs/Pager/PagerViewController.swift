@@ -7,14 +7,10 @@ import Foundation
 import UIKit
 
 class PagerViewController: GenericViewController {
-    private enum Channels : String {
-        case teledu = "teledu-pager"
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        (model as! PagerViewModel).subscribe(to: Channels.teledu.rawValue)
+        (model as! PagerViewModel).subscribe()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -22,6 +18,6 @@ class PagerViewController: GenericViewController {
     }
     
     deinit {
-        (model as! PagerViewModel).unsubscribe(from: Channels.teledu.rawValue)
+        (model as! PagerViewModel).unsubscribe()
     }
 }
