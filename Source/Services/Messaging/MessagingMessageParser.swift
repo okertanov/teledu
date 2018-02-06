@@ -5,6 +5,6 @@
 
 import Foundation
 
-@objc public protocol PagerMessageParser: class {
+@objc protocol MessagingMessageParser: class {
     
 }

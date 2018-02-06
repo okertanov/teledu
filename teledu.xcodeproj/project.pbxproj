@@ -26,7 +26,7 @@
 		76157DB22028A2990027EB87 /* DrawingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76157DB12028A2980027EB87 /* DrawingViewModel.swift */; };
 		7642ED452029CBFC00328659 /* PubNub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7642ED412029CBE600328659 /* PubNub.framework */; };
 		7642ED462029CBFC00328659 /* PubNub.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7642ED412029CBE600328659 /* PubNub.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7642ED4A2029E1A700328659 /* PagerMessageParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7642ED492029E1A700328659 /* PagerMessageParser.swift */; };
+		7642ED4A2029E1A700328659 /* MessagingMessageParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7642ED492029E1A700328659 /* MessagingMessageParser.swift */; };
 		7642ED4C2029E28C00328659 /* PagerViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7642ED4B2029E28C00328659 /* PagerViewModelTests.swift */; };
 		7662A0D42024778D00E15C63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662A0D32024778D00E15C63 /* AppDelegate.swift */; };
 		7662A0D62024778D00E15C63 /* PagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662A0D52024778D00E15C63 /* PagerViewController.swift */; };
@@ -109,7 +109,7 @@
 		76157DAF202891090027EB87 /* RootTabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarViewModel.swift; sourceTree = "<group>"; };
 		76157DB12028A2980027EB87 /* DrawingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewModel.swift; sourceTree = "<group>"; };
 		7642ED412029CBE600328659 /* PubNub.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PubNub.framework; sourceTree = "<group>"; };
-		7642ED492029E1A700328659 /* PagerMessageParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerMessageParser.swift; sourceTree = "<group>"; };
+		7642ED492029E1A700328659 /* MessagingMessageParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingMessageParser.swift; sourceTree = "<group>"; };
 		7642ED4B2029E28C00328659 /* PagerViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerViewModelTests.swift; sourceTree = "<group>"; };
 		7662A0D02024778D00E15C63 /* teledu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = teledu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7662A0D32024778D00E15C63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -246,14 +246,6 @@
 			path = PubNub;
 			sourceTree = "<group>";
 		};
-		7642ED482029E18F00328659 /* Parsers */ = {
-			isa = PBXGroup;
-			children = (
-				7642ED492029E1A700328659 /* PagerMessageParser.swift */,
-			);
-			path = Parsers;
-			sourceTree = "<group>";
-		};
 		7662A0C72024778D00E15C63 = {
 			isa = PBXGroup;
 			children = (
@@ -323,6 +315,7 @@
 		768E5FD0202482CA00D3B93F /* Messaging */ = {
 			isa = PBXGroup;
 			children = (
+				7642ED492029E1A700328659 /* MessagingMessageParser.swift */,
 				768E5FE62024864200D3B93F /* MessagingService.swift */,
 				768E5FE82024864600D3B93F /* Impl */,
 			);
@@ -362,7 +355,6 @@
 		768E5FD42024834B00D3B93F /* Pager */ = {
 			isa = PBXGroup;
 			children = (
-				7642ED482029E18F00328659 /* Parsers */,
 				7662A0D52024778D00E15C63 /* PagerViewController.swift */,
 				76157DA4202875930027EB87 /* PagerViewModel.swift */,
 				76992C0A2029B3790015B52E /* PagerMessage.swift */,
@@ -644,7 +636,7 @@
 				76157DB22028A2990027EB87 /* DrawingViewModel.swift in Sources */,
 				76157D9D202869F50027EB87 /* ViewControllerExtensions.swift in Sources */,
 				76992C072029B10B0015B52E /* Invocable.swift in Sources */,
-				7642ED4A2029E1A700328659 /* PagerMessageParser.swift in Sources */,
+				7642ED4A2029E1A700328659 /* MessagingMessageParser.swift in Sources */,
 				768E60032024950000D3B93F /* MessageBoxServiceImpl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
