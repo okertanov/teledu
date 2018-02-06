@@ -45,6 +45,8 @@
 		768E6000202494D300D3B93F /* MessageBoxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E5FFF202494D300D3B93F /* MessageBoxService.swift */; };
 		768E60032024950000D3B93F /* MessageBoxServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E60022024950000D3B93F /* MessageBoxServiceImpl.swift */; };
 		76992BFE20299F9D0015B52E /* ServiceLocatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76992BFD20299F9D0015B52E /* ServiceLocatorTests.swift */; };
+		76992C002029A4ED0015B52E /* BrowserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76992BFF2029A4ED0015B52E /* BrowserViewModel.swift */; };
+		76992C022029A5180015B52E /* SysInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76992C012029A5180015B52E /* SysInfoViewModel.swift */; };
 		769EC1C72024AE9A0011DB3A /* WebSocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769EC1C62024AE9A0011DB3A /* WebSocketService.swift */; };
 		769EC1C92024AEB40011DB3A /* WebSocketServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769EC1C82024AEB40011DB3A /* WebSocketServiceImpl.swift */; };
 /* End PBXBuildFile section */
@@ -126,6 +128,8 @@
 		768E60022024950000D3B93F /* MessageBoxServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBoxServiceImpl.swift; sourceTree = "<group>"; };
 		768E60042024962D00D3B93F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		76992BFD20299F9D0015B52E /* ServiceLocatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocatorTests.swift; sourceTree = "<group>"; };
+		76992BFF2029A4ED0015B52E /* BrowserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViewModel.swift; sourceTree = "<group>"; };
+		76992C012029A5180015B52E /* SysInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SysInfoViewModel.swift; sourceTree = "<group>"; };
 		769EC1C42024AE400011DB3A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		769EC1C62024AE9A0011DB3A /* WebSocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketService.swift; sourceTree = "<group>"; };
 		769EC1C82024AEB40011DB3A /* WebSocketServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketServiceImpl.swift; sourceTree = "<group>"; };
@@ -340,6 +344,7 @@
 			isa = PBXGroup;
 			children = (
 				768E5FD8202483B600D3B93F /* BrowserViewController.swift */,
+				76992BFF2029A4ED0015B52E /* BrowserViewModel.swift */,
 			);
 			path = Browser;
 			sourceTree = "<group>";
@@ -348,6 +353,7 @@
 			isa = PBXGroup;
 			children = (
 				768E5FDA202483C800D3B93F /* SysInfoViewController.swift */,
+				76992C012029A5180015B52E /* SysInfoViewModel.swift */,
 			);
 			path = SysInfo;
 			sourceTree = "<group>";
@@ -563,6 +569,7 @@
 				76157DA3202872150027EB87 /* RootTabBarController.swift in Sources */,
 				76157D9C202869F50027EB87 /* UIImageExtensions.swift in Sources */,
 				768E5FE52024857F00D3B93F /* GenericViewController.swift in Sources */,
+				76992C002029A4ED0015B52E /* BrowserViewModel.swift in Sources */,
 				768E5FF9202489AF00D3B93F /* ServiceContextInjectable.swift in Sources */,
 				768E5FF32024884300D3B93F /* ServiceContext.swift in Sources */,
 				76157DAE20288B940027EB87 /* Activable.swift in Sources */,
@@ -576,6 +583,7 @@
 				76157D9E202869F50027EB87 /* ViewExtensions.swift in Sources */,
 				768E5FD9202483B600D3B93F /* BrowserViewController.swift in Sources */,
 				76157DA0202869F50027EB87 /* CommonTypes.swift in Sources */,
+				76992C022029A5180015B52E /* SysInfoViewModel.swift in Sources */,
 				768E5FED2024869300D3B93F /* Bootstrapper.swift in Sources */,
 				76157DA1202869F50027EB87 /* ViewLocator.swift in Sources */,
 				76157DA5202875930027EB87 /* PagerViewModel.swift in Sources */,

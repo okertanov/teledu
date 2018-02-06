@@ -6,10 +6,10 @@
 import Foundation
 import UIKit
 
-open class GenericViewController: UIViewController, Activable, ViewModelInjectable {
-    open private(set) var model: ViewModel?
+open class GenericViewController<TViewModel: ViewModel>: UIViewController, Activable, ViewModelInjectable {
+    open private(set) var model: TViewModel?
     
-    convenience init(model: ViewModel) {
+    convenience init(model: TViewModel) {
         self.init(nibName: nil, bundle: nil)
         self.model = model
     }
@@ -21,6 +21,6 @@ open class GenericViewController: UIViewController, Activable, ViewModelInjectab
     }
     
     public func inject(_ model: ViewModel) {
-        self.model = model
+        self.model = model as? TViewModel
     }
 }

@@ -6,11 +6,11 @@
 import Foundation
 import UIKit
 
-class PagerViewController: GenericViewController {
+class PagerViewController: GenericViewController<PagerViewModel> {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        (model as! PagerViewModel).subscribe()
+        model!.subscribe()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -18,6 +18,6 @@ class PagerViewController: GenericViewController {
     }
     
     deinit {
-        (model as! PagerViewModel).unsubscribe()
+        model!.unsubscribe()
     }
 }

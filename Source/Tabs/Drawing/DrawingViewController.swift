@@ -6,7 +6,7 @@
 import Foundation
 import UIKit
 
-class DrawingViewController: GenericViewController {
+class DrawingViewController: GenericViewController<DrawingViewModel> {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
