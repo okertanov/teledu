@@ -250,7 +250,6 @@
 				768E5FE32024856000D3B93F /* CommonUI */,
 				768E5FD32024833400D3B93F /* Tabs */,
 				768E5FD2202482EA00D3B93F /* Services */,
-				768E5FD0202482CA00D3B93F /* Messaging */,
 				768E5FEB2024866600D3B93F /* System */,
 				7662A1002024784E00E15C63 /* teledu.entitlements */,
 				7662A0D92024778D00E15C63 /* Main.storyboard */,
@@ -289,7 +288,8 @@
 		768E5FD0202482CA00D3B93F /* Messaging */ = {
 			isa = PBXGroup;
 			children = (
-				768E5FFE202494AE00D3B93F /* Service */,
+				768E5FE62024864200D3B93F /* MessagingService.swift */,
+				768E5FE82024864600D3B93F /* Impl */,
 			);
 			path = Messaging;
 			sourceTree = "<group>";
@@ -307,6 +307,7 @@
 			children = (
 				768E5FF42024890500D3B93F /* Base */,
 				768E5FFD2024947700D3B93F /* Common */,
+				768E5FD0202482CA00D3B93F /* Messaging */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -405,15 +406,6 @@
 				768E6001202494EF00D3B93F /* Impl */,
 			);
 			path = Common;
-			sourceTree = "<group>";
-		};
-		768E5FFE202494AE00D3B93F /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				768E5FE62024864200D3B93F /* MessagingService.swift */,
-				768E5FE82024864600D3B93F /* Impl */,
-			);
-			path = Service;
 			sourceTree = "<group>";
 		};
 		768E6001202494EF00D3B93F /* Impl */ = {
