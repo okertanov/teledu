@@ -5,6 +5,9 @@
 
 import Foundation
 
-@objc protocol MessagingMessageParser: class {
+protocol MessagingMessageParser: class {
+    associatedtype Message
     
+    func canParse(_ payload: MessagingPayload) -> Bool
+    func parse(_ payload: MessagingPayload) -> Message
 }

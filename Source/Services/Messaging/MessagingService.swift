@@ -10,24 +10,3 @@ import Foundation
     func unsubscribe(_ channel: String)
     func fetchHistory(_ channel: String, _ block: @escaping (AnyObject) -> Void)
 }
-
-public enum MessagingSubscriptionStatus {
-    case connected, disconnected, error
-}
-
-public class MessagingPayload {
-    public private(set) var timestamp: UInt64
-    public private(set) var publisher: String
-    public private(set) var payload: [AnyHashable: Any]
-    
-    public init(_ timestamp: UInt64, _ publisher: String, _ payload: [AnyHashable: Any]) {
-        self.timestamp = timestamp
-        self.publisher = publisher
-        self.payload = payload
-    }
-}
-
-public enum MessagingError: Error {
-    case subscriptionError(message: String)
-    case historyError(message: String)
-}

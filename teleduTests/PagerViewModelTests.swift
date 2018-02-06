@@ -1,7 +1,4 @@
 //
-//  PagerViewModelTests.swift
-//  teleduTests
-//
 //  Created by Oleg Kertanov on 06/02/2018.
 //  Copyright © 2018 lexiko.me. All rights reserved.
 //
