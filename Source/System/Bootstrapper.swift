@@ -5,7 +5,6 @@
 
 import Foundation
 import UIKit
-import Common
 
 class Bootstrapper {
     private let serviceContext = ApplicationServiceContext()

@@ -5,7 +5,6 @@
 
 import UIKit
 import TVMLKit
-import Common
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, TVApplicationControllerDelegate {
