@@ -26,7 +26,9 @@ class RootTabBarController: UITabBarController, UITabBarControllerDelegate, Acti
 
         let vc1 = ViewLocator.locateVC(PagerViewController.self, PagerViewModel.self)!
         let vc2 = ViewLocator.locateVC(DrawingViewController.self, DrawingViewModel.self)!
-        let newViewControllers = [vc1, vc2]
+        let vc3 = ViewLocator.locateVC(BrowserViewController.self, BrowserViewModel.self)!
+        let vc4 = ViewLocator.locateVC(SysInfoViewController.self, SysInfoViewModel.self)!
+        let newViewControllers = [vc1, vc2, vc3, vc4 ]
 
         setViewControllers(newViewControllers, animated: false)
     }

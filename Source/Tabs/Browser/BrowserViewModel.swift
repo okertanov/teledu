@@ -5,5 +5,8 @@
 
 import Foundation
 
-class BrowserViewModel: ViewModel {
+class BrowserViewModel: ViewModel, ViewModelRequired {
+    public var title: String {
+        return "Browser"
+    }
 }

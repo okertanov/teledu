@@ -5,12 +5,16 @@
 
 import Foundation
 
-class PagerViewModel: ViewModel {
+class PagerViewModel: ViewModel, ViewModelRequired {
     private enum Channels : String {
         case pager = "teledu-pager"
     }
     
     private lazy var messagingService: MessagingService? = serviceContext?.resolve(MessagingService.self)
+    
+    public var title: String {
+        return "Pager"
+    }
     
     public let propertyChanged = Event<AnyKeyPath>()
     

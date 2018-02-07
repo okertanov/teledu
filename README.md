@@ -20,4 +20,5 @@ Tabbeb interface
  - CCTV camera video?
  - Home Automation?
  - Charts tab
+ - Render SVG
  

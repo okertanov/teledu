@@ -5,5 +5,8 @@
 
 import Foundation
 
-class DrawingViewModel: ViewModel {
+class DrawingViewModel: ViewModel, ViewModelRequired {
+    public var title: String {
+        return "Drawing"
+    }
 }
