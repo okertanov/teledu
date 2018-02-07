@@ -30,6 +30,7 @@
 		7631CC5F202B15780075F2C6 /* BrowserMessageParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7631CC5E202B15780075F2C6 /* BrowserMessageParser.swift */; };
 		7631CC61202B23030075F2C6 /* ViewModelRequired.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7631CC60202B23030075F2C6 /* ViewModelRequired.swift */; };
 		7631CC63202B483D0075F2C6 /* MessagingMessageParserFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7631CC62202B483D0075F2C6 /* MessagingMessageParserFactory.swift */; };
+		7631CC67202B4FB70075F2C6 /* GenericMessagingMessageParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7631CC66202B4FB70075F2C6 /* GenericMessagingMessageParser.swift */; };
 		7642ED452029CBFC00328659 /* PubNub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7642ED412029CBE600328659 /* PubNub.framework */; };
 		7642ED462029CBFC00328659 /* PubNub.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7642ED412029CBE600328659 /* PubNub.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7642ED4A2029E1A700328659 /* AssociatedMessagingMessageParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7642ED492029E1A700328659 /* AssociatedMessagingMessageParser.swift */; };
@@ -124,6 +125,7 @@
 		7631CC5E202B15780075F2C6 /* BrowserMessageParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserMessageParser.swift; sourceTree = "<group>"; };
 		7631CC60202B23030075F2C6 /* ViewModelRequired.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelRequired.swift; sourceTree = "<group>"; };
 		7631CC62202B483D0075F2C6 /* MessagingMessageParserFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingMessageParserFactory.swift; sourceTree = "<group>"; };
+		7631CC66202B4FB70075F2C6 /* GenericMessagingMessageParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericMessagingMessageParser.swift; sourceTree = "<group>"; };
 		7642ED412029CBE600328659 /* PubNub.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PubNub.framework; sourceTree = "<group>"; };
 		7642ED492029E1A700328659 /* AssociatedMessagingMessageParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssociatedMessagingMessageParser.swift; sourceTree = "<group>"; };
 		7642ED4B2029E28C00328659 /* PagerViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerViewModelTests.swift; sourceTree = "<group>"; };
@@ -341,6 +343,7 @@
 				7642ED54202A286500328659 /* MessagingError.swift */,
 				7642ED52202A284100328659 /* MessagingPayload.swift */,
 				7642ED492029E1A700328659 /* AssociatedMessagingMessageParser.swift */,
+				7631CC66202B4FB70075F2C6 /* GenericMessagingMessageParser.swift */,
 				768E5FE82024864600D3B93F /* Impl */,
 			);
 			path = Messaging;
@@ -669,6 +672,7 @@
 				7631CC63202B483D0075F2C6 /* MessagingMessageParserFactory.swift in Sources */,
 				76157D9B202869F50027EB87 /* UIColorExtensions.swift in Sources */,
 				768E5FEF202486BF00D3B93F /* Registrable.swift in Sources */,
+				7631CC67202B4FB70075F2C6 /* GenericMessagingMessageParser.swift in Sources */,
 				768E5FE72024864200D3B93F /* MessagingService.swift in Sources */,
 				769EC1C72024AE9A0011DB3A /* WebSocketService.swift in Sources */,
 				7662A0D62024778D00E15C63 /* PagerViewController.swift in Sources */,

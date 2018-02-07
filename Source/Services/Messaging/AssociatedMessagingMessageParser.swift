@@ -14,18 +14,3 @@ protocol AssociatedMessagingMessageParser: AbstractMessagingMessageParser {
     
     func parse(_ payload: MessagingPayload) -> Message
 }
-
-class GenericMessagingMessageParser<T: Activable>: AssociatedMessagingMessageParser, Activable {
-    typealias Message = T
-    
-    required init() {
-    }
-    
-    func canParse(_ payload: MessagingPayload) -> Bool {
-        return false
-    }
-    
-    func parse(_ payload: MessagingPayload) -> Message {
-        return T()
-    }
-}
