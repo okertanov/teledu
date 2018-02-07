@@ -5,7 +5,7 @@
 
 import Foundation
 
-class BaseService: Service, Activable, ServiceContextInjectable {
+class BaseService: Registrable, Activable, ServiceContextInjectable {
     open private(set) var serviceContext: ServiceContext?
     
     public required init() {

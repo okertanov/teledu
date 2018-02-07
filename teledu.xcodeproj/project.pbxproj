@@ -45,7 +45,7 @@
 		768E5FE72024864200D3B93F /* MessagingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E5FE62024864200D3B93F /* MessagingService.swift */; };
 		768E5FEA2024865600D3B93F /* MessagingServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E5FE92024865600D3B93F /* MessagingServiceImpl.swift */; };
 		768E5FED2024869300D3B93F /* Bootstrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E5FEC2024869300D3B93F /* Bootstrapper.swift */; };
-		768E5FEF202486BF00D3B93F /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E5FEE202486BF00D3B93F /* Service.swift */; };
+		768E5FEF202486BF00D3B93F /* Registrable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E5FEE202486BF00D3B93F /* Registrable.swift */; };
 		768E5FF12024871300D3B93F /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E5FF02024871300D3B93F /* BaseService.swift */; };
 		768E5FF32024884300D3B93F /* ServiceContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E5FF22024884300D3B93F /* ServiceContext.swift */; };
 		768E5FF72024898400D3B93F /* ApplicationServiceContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E5FF62024898400D3B93F /* ApplicationServiceContext.swift */; };
@@ -139,7 +139,7 @@
 		768E5FE62024864200D3B93F /* MessagingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingService.swift; sourceTree = "<group>"; };
 		768E5FE92024865600D3B93F /* MessagingServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingServiceImpl.swift; sourceTree = "<group>"; };
 		768E5FEC2024869300D3B93F /* Bootstrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bootstrapper.swift; sourceTree = "<group>"; };
-		768E5FEE202486BF00D3B93F /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		768E5FEE202486BF00D3B93F /* Registrable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registrable.swift; sourceTree = "<group>"; };
 		768E5FF02024871300D3B93F /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		768E5FF22024884300D3B93F /* ServiceContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceContext.swift; sourceTree = "<group>"; };
 		768E5FF62024898400D3B93F /* ApplicationServiceContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationServiceContext.swift; sourceTree = "<group>"; };
@@ -432,7 +432,7 @@
 		768E5FF42024890500D3B93F /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				768E5FEE202486BF00D3B93F /* Service.swift */,
+				768E5FEE202486BF00D3B93F /* Registrable.swift */,
 				768E5FF22024884300D3B93F /* ServiceContext.swift */,
 				768E5FF8202489AF00D3B93F /* ServiceContextInjectable.swift */,
 				768E5FF02024871300D3B93F /* BaseService.swift */,
@@ -645,7 +645,7 @@
 				76157DAC2028842C0027EB87 /* Activator.swift in Sources */,
 				769EC1C92024AEB40011DB3A /* WebSocketServiceImpl.swift in Sources */,
 				76157D9B202869F50027EB87 /* UIColorExtensions.swift in Sources */,
-				768E5FEF202486BF00D3B93F /* Service.swift in Sources */,
+				768E5FEF202486BF00D3B93F /* Registrable.swift in Sources */,
 				768E5FE72024864200D3B93F /* MessagingService.swift in Sources */,
 				769EC1C72024AE9A0011DB3A /* WebSocketService.swift in Sources */,
 				7662A0D62024778D00E15C63 /* PagerViewController.swift in Sources */,

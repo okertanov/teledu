@@ -5,6 +5,6 @@
 
 import Foundation
 
-@objc public protocol WebSocketService: Service {
+@objc public protocol WebSocketService: Registrable {
     
 }

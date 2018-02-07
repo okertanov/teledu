@@ -5,5 +5,5 @@
 
 import Foundation
 
-@objc public protocol Service : class {
+@objc public protocol Registrable : class {
 }

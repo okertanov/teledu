@@ -49,6 +49,10 @@ class Bootstrapper {
         serviceContext.register(MessageBoxService.self, Activator.activate(MessageBoxServiceImpl.self))
         serviceContext.register(WebSocketService.self, Activator.activate(WebSocketServiceImpl.self))
         serviceContext.register(MessagingService.self, Activator.activate(MessagingServiceImpl.self))
+        
+        serviceContext.registerMany(AbstractMessagingMessageParser.self, [
+            Activator.activate(PagerMessageParser.self)
+        ])
     }
     
     fileprivate func terminateImpl() {

@@ -6,20 +6,20 @@
 import Foundation
 
 class ApplicationServiceContext: ServiceContext {
-    fileprivate var services: [AnyHashable: Service] = [:]
-    fileprivate var servicesTree: [AnyHashable: [Service]] = [:]
+    fileprivate var services: [AnyHashable: Registrable] = [:]
+    fileprivate var servicesTree: [AnyHashable: [Registrable]] = [:]
     
-    func register<T: Service>(_ type: ServiceMetaType, _ service: T) {
+    func register<T: Registrable>(_ type: ServiceMetaType, _ service: T) {
         let typeOfService = String.init(describing: type)
         services[typeOfService] = service
     }
     
-    func registerMany<T: Service>(_ type: ServiceMetaType, _ services: [T]) {
+    func registerMany<T: Registrable>(_ type: ServiceMetaType, _ services: [T]) {
         let typeOfService = String.init(describing: type)
         servicesTree[typeOfService] = services
     }
     
-    func resolve<T: Service>(_ type: ServiceMetaType) -> T? {
+    func resolve<T: Registrable>(_ type: ServiceMetaType) -> T? {
         let typeOfService = String.init(describing: type)
         if let resolved = services[typeOfService] {
             return resolved as? T
@@ -27,7 +27,7 @@ class ApplicationServiceContext: ServiceContext {
         return nil
     }
     
-    func resolveAll<T: Service>(_ type: ServiceMetaType) -> [T]? {
+    func resolveAll<T: Registrable>(_ type: ServiceMetaType) -> [T]? {
         let typeOfService = String.init(describing: type)
         if let resolved = servicesTree[typeOfService] {
             return resolved as? [T]

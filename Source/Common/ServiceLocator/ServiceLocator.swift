@@ -21,11 +21,11 @@ open class ServiceLocator {
         return instance!.getContext()
     }
     
-    public static func resolve<T: Service>(_ type: ServiceContext.ServiceMetaType) -> T? {
+    public static func resolve<T: Registrable>(_ type: ServiceContext.ServiceMetaType) -> T? {
         return instance!.resolve(type)
     }
     
-    public static func resolveAll<T: Service>(_ type: ServiceContext.ServiceMetaType) -> [T]? {
+    public static func resolveAll<T: Registrable>(_ type: ServiceContext.ServiceMetaType) -> [T]? {
         return instance!.resolveAll(type)
     }
     
@@ -33,11 +33,11 @@ open class ServiceLocator {
         return context
     }
     
-    private func resolve<T: Service>(_ type: ServiceContext.ServiceMetaType) -> T? {
+    private func resolve<T: Registrable>(_ type: ServiceContext.ServiceMetaType) -> T? {
         return context.resolve(type)
     }
     
-    private func resolveAll<T: Service>(_ type: ServiceContext.ServiceMetaType) -> [T]? {
+    private func resolveAll<T: Registrable>(_ type: ServiceContext.ServiceMetaType) -> [T]? {
         return context.resolveAll(type)
     }
 }

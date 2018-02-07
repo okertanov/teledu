@@ -5,8 +5,11 @@
 
 import Foundation
 
-class PagerMessageParser: MessagingMessageParser {
+class PagerMessageParser: Activable, Registrable, MessagingMessageParser {
     typealias Message = PagerMessage
+    
+    required init() {
+    }
     
     func canParse(_ payload: MessagingPayload) -> Bool {
         return false

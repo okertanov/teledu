@@ -5,7 +5,7 @@
 
 import Foundation
 
-@objc public protocol MessagingService: Service {
+@objc public protocol MessagingService: Registrable {
     func subscribe(_ channel: String, _ block: @escaping (AnyObject) -> Void)
     func unsubscribe(_ channel: String)
     func fetchHistory(_ channel: String, _ block: @escaping (AnyObject) -> Void)
