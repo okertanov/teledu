@@ -10,10 +10,22 @@ class PagerMessageParser: GenericMessagingMessageParser<PagerMessage> {
     }
     
     override func canParse(_ payload: MessagingPayload) -> Bool {
-        return false
+        let text = payload.payload["text"] as? String
+        let description = payload.payload["description"] as? String
+        let parsable = !(text.isNullOrEmpty && description.isNullOrEmpty)
+        return parsable
     }
     
     override func parse(_ payload: MessagingPayload) -> Message {
-        return PagerMessage.empty
+        let message = PagerMessage(
+            identifier: NSUUID().uuidString,
+            text: payload.payload["text"] as? String,
+            description: payload.payload["description"] as? String,
+            foregroundColor: payload.payload["foregroundColor"] as? String,
+            backgroundColor: payload.payload["backgroundColor"] as? String,
+            imageUrl: payload.payload["imageUrl"] as? String
+        )
+        
+        return message
     }
 }

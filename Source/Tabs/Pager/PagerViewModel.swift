@@ -11,7 +11,7 @@ class PagerViewModel: ViewModel {
     }
     
     private lazy var messagingService: MessagingService? = serviceContext?.resolve(MessagingService.self)
-    private lazy var messageParsers: [AbstractMessagingMessageParser]? = serviceContext?.resolveAll(AbstractMessagingMessageParser.self)
+    private lazy var messageParserFactory: MessagingMessageParserFactory? = Activator.activate(MessagingMessageParserFactory.self)
     
     public override var title: String {
         return "Pager"
@@ -75,9 +75,9 @@ class PagerViewModel: ViewModel {
     }
     
     fileprivate func onMessagingPayload(_ payload: MessagingPayload) {
-        // TODO: consider to create 'MessagingMessageParserFactory'
-        let messageParser: GenericMessagingMessageParser<PagerMessage> = getMessageParser(payload)
-        self.message = messageParser.parse(payload)
+        if let messageParser: GenericMessagingMessageParser<PagerMessage> = messageParserFactory!.getMessageParser(payload) {
+            self.message = messageParser.parse(payload)
+        }
     }
     
     fileprivate func onMessagingHistory(_ payloads: [MessagingPayload]) {
@@ -94,12 +94,5 @@ class PagerViewModel: ViewModel {
     
     fileprivate func onUnknownMessage(_ message: AnyObject) {
         print("Unknown: ", message)
-    }
-    
-    fileprivate func getMessageParser<T: AssociatedMessagingMessageParser>(_ payload: MessagingPayload) -> T {
-        let parser = messageParsers?
-            .filter { $0.canParse(payload) }
-            .first
-        return parser as! T
     }
 }

@@ -8,12 +8,12 @@ import Foundation
 class PagerMessage: Activable {
     static let empty = PagerMessage()
     
-    let identifier: String = String.empty
-    let text: String? = nil
-    let description: String? = nil
-    let foregroundColor: String? = nil
-    let backgroundColor: String? = nil
-    let imageUrl: String? = nil
+    private(set) var identifier: String = String.empty
+    private(set) var text: String? = nil
+    private(set) var description: String? = nil
+    private(set) var foregroundColor: String? = nil
+    private(set) var backgroundColor: String? = nil
+    private(set) var imageUrl: String? = nil
     
     required init() {
     }
@@ -26,5 +26,15 @@ extension PagerMessage {
     
     var kpIdentifier: KeyPath<PagerMessage, String> {
         get { return \PagerMessage.identifier }
+    }
+    
+    convenience init(identifier: String, text: String?, description: String?, foregroundColor: String?, backgroundColor: String?, imageUrl: String?) {
+        self.init()
+        self.identifier = identifier
+        self.text = text
+        self.description = description
+        self.foregroundColor = foregroundColor
+        self.backgroundColor = backgroundColor
+        self.imageUrl = imageUrl
     }
 }
