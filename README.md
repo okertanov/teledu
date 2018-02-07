@@ -31,6 +31,8 @@ Tabbeb interface
 
 Other
 -------
+    - Use PubNub Functions to process/translate messages
+    - Integrate Telegram bot (other bots)
     - HomeKit?
     - CCTV camera video?
     - Home Automation?
