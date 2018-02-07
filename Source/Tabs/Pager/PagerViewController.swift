@@ -17,6 +17,8 @@ class PagerViewController: GenericViewController<PagerViewModel> {
         propertyChangedToken = model!.propertyChanged.addHandler(target: model!, onModelPropertyChanged)
         
         model!.subscribe()
+        
+        messageLabel.text = "Loading..."
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -44,11 +46,11 @@ class PagerViewController: GenericViewController<PagerViewModel> {
     }
     
     private func renderMessage(_ message: PagerMessage) {
-        
+        messageLabel.text = message.text ?? message.description
     }
     
     private func renderHistory(_ history: [PagerMessage]) {
-        
+        // TODO: impl
     }
     
     deinit {

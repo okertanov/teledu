@@ -5,11 +5,14 @@
 
 import Foundation
 
-struct BrowserMessage {
-    static let empty = BrowserMessage(identifier: String.empty, url: URL.blank)
+class BrowserMessage: Activable {
+    static let empty = BrowserMessage()
     
-    let identifier: String
-    let url: URL
+    let identifier: String = String.empty
+    let url: URL = URL.blank
+    
+    required init() {
+    }
 }
 
 extension BrowserMessage {

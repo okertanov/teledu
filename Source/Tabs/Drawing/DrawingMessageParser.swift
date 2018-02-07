@@ -5,17 +5,15 @@
 
 import Foundation
 
-class DrawingMessageParser: Activable, Registrable, MessagingMessageParser {
-    typealias Message = DrawingMessage
-    
+class DrawingMessageParser: GenericMessagingMessageParser<DrawingMessage> {    
     required init() {
     }
     
-    func canParse(_ payload: MessagingPayload) -> Bool {
+    override func canParse(_ payload: MessagingPayload) -> Bool {
         return false
     }
     
-    func parse(_ payload: MessagingPayload) -> Message {
+    override func parse(_ payload: MessagingPayload) -> Message {
         return DrawingMessage.empty
     }
 }

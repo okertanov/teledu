@@ -5,17 +5,15 @@
 
 import Foundation
 
-class PagerMessageParser: Activable, Registrable, MessagingMessageParser {
-    typealias Message = PagerMessage
-    
+class PagerMessageParser: GenericMessagingMessageParser<PagerMessage> {    
     required init() {
     }
     
-    func canParse(_ payload: MessagingPayload) -> Bool {
+    override func canParse(_ payload: MessagingPayload) -> Bool {
         return false
     }
     
-    func parse(_ payload: MessagingPayload) -> Message {
+    override func parse(_ payload: MessagingPayload) -> Message {
         return PagerMessage.empty
     }
 }

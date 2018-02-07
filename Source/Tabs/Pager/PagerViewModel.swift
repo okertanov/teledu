@@ -5,14 +5,15 @@
 
 import Foundation
 
-class PagerViewModel: ViewModel, ViewModelRequired {
+class PagerViewModel: ViewModel {
     private enum Channels : String {
         case pager = "teledu-pager"
     }
     
     private lazy var messagingService: MessagingService? = serviceContext?.resolve(MessagingService.self)
+    private lazy var messageParsers: [AbstractMessagingMessageParser]? = serviceContext?.resolveAll(AbstractMessagingMessageParser.self)
     
-    public var title: String {
+    public override var title: String {
         return "Pager"
     }
     
@@ -74,7 +75,9 @@ class PagerViewModel: ViewModel, ViewModelRequired {
     }
     
     fileprivate func onMessagingPayload(_ payload: MessagingPayload) {
-        //self.message = message
+        // TODO: consider to create 'MessagingMessageParserFactory'
+        let messageParser: GenericMessagingMessageParser<PagerMessage> = getMessageParser(payload)
+        self.message = messageParser.parse(payload)
     }
     
     fileprivate func onMessagingHistory(_ payloads: [MessagingPayload]) {
@@ -91,5 +94,12 @@ class PagerViewModel: ViewModel, ViewModelRequired {
     
     fileprivate func onUnknownMessage(_ message: AnyObject) {
         print("Unknown: ", message)
+    }
+    
+    fileprivate func getMessageParser<T: AssociatedMessagingMessageParser>(_ payload: MessagingPayload) -> T {
+        let parser = messageParsers?
+            .filter { $0.canParse(payload) }
+            .first
+        return parser as! T
     }
 }

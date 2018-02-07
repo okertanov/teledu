@@ -5,8 +5,12 @@
 
 import Foundation
 
-public class ViewModel : Activable, ServiceContextInjectable {
+public class ViewModel : ViewModelRequired, Activable, ServiceContextInjectable {
     open private(set) var serviceContext: ServiceContext?
+    
+    public var title: String {
+        return String.empty
+    }
     
     public required init() {
     }

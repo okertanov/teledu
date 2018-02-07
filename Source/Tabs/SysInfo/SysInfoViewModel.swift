@@ -5,8 +5,8 @@
 
 import Foundation
 
-class SysInfoViewModel: ViewModel, ViewModelRequired {
-    public var title: String {
+class SysInfoViewModel: ViewModel {
+    public override var title: String {
         return "System Info"
     }
 }

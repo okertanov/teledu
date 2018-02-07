@@ -5,11 +5,14 @@
 
 import Foundation
 
-struct DrawingMessage {
-    static let empty = DrawingMessage(identifier: String.empty)
+class DrawingMessage: Activable {
+    static let empty = DrawingMessage()
     
-    let identifier: String
+    let identifier: String = String.empty
     let strokes: [DrawingStroke] = []
+    
+    required init() {
+    }
 }
 
 extension DrawingMessage {

@@ -5,8 +5,8 @@
 
 import Foundation
 
-class DrawingViewModel: ViewModel, ViewModelRequired {
-    public var title: String {
+class DrawingViewModel: ViewModel {
+    public override var title: String {
         return "Drawing"
     }
 }

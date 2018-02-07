@@ -31,7 +31,7 @@
 		7631CC61202B23030075F2C6 /* ViewModelRequired.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7631CC60202B23030075F2C6 /* ViewModelRequired.swift */; };
 		7642ED452029CBFC00328659 /* PubNub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7642ED412029CBE600328659 /* PubNub.framework */; };
 		7642ED462029CBFC00328659 /* PubNub.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7642ED412029CBE600328659 /* PubNub.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7642ED4A2029E1A700328659 /* MessagingMessageParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7642ED492029E1A700328659 /* MessagingMessageParser.swift */; };
+		7642ED4A2029E1A700328659 /* AssociatedMessagingMessageParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7642ED492029E1A700328659 /* AssociatedMessagingMessageParser.swift */; };
 		7642ED4C2029E28C00328659 /* PagerViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7642ED4B2029E28C00328659 /* PagerViewModelTests.swift */; };
 		7642ED4F202A257B00328659 /* PagerMessageParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7642ED4E202A257B00328659 /* PagerMessageParser.swift */; };
 		7642ED51202A280300328659 /* MessagingSubscriptionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7642ED50202A280300328659 /* MessagingSubscriptionStatus.swift */; };
@@ -123,7 +123,7 @@
 		7631CC5E202B15780075F2C6 /* BrowserMessageParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserMessageParser.swift; sourceTree = "<group>"; };
 		7631CC60202B23030075F2C6 /* ViewModelRequired.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelRequired.swift; sourceTree = "<group>"; };
 		7642ED412029CBE600328659 /* PubNub.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PubNub.framework; sourceTree = "<group>"; };
-		7642ED492029E1A700328659 /* MessagingMessageParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingMessageParser.swift; sourceTree = "<group>"; };
+		7642ED492029E1A700328659 /* AssociatedMessagingMessageParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssociatedMessagingMessageParser.swift; sourceTree = "<group>"; };
 		7642ED4B2029E28C00328659 /* PagerViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerViewModelTests.swift; sourceTree = "<group>"; };
 		7642ED4E202A257B00328659 /* PagerMessageParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerMessageParser.swift; sourceTree = "<group>"; };
 		7642ED50202A280300328659 /* MessagingSubscriptionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingSubscriptionStatus.swift; sourceTree = "<group>"; };
@@ -338,7 +338,7 @@
 				7642ED50202A280300328659 /* MessagingSubscriptionStatus.swift */,
 				7642ED54202A286500328659 /* MessagingError.swift */,
 				7642ED52202A284100328659 /* MessagingPayload.swift */,
-				7642ED492029E1A700328659 /* MessagingMessageParser.swift */,
+				7642ED492029E1A700328659 /* AssociatedMessagingMessageParser.swift */,
 				768E5FE82024864600D3B93F /* Impl */,
 			);
 			path = Messaging;
@@ -671,7 +671,7 @@
 				76157DB22028A2990027EB87 /* DrawingViewModel.swift in Sources */,
 				76157D9D202869F50027EB87 /* ViewControllerExtensions.swift in Sources */,
 				76992C072029B10B0015B52E /* Invocable.swift in Sources */,
-				7642ED4A2029E1A700328659 /* MessagingMessageParser.swift in Sources */,
+				7642ED4A2029E1A700328659 /* AssociatedMessagingMessageParser.swift in Sources */,
 				7631CC5D202B15690075F2C6 /* BrowserMessage.swift in Sources */,
 				768E60032024950000D3B93F /* MessageBoxServiceImpl.swift in Sources */,
 			);

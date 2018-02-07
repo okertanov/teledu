@@ -22,5 +22,8 @@ open class GenericViewController<TViewModel: ViewModel>: UIViewController, Activ
     
     public func inject(_ model: ViewModel) {
         self.model = model as? TViewModel
+        
+        // Post-inject, but pre-didload
+        tabBarItem.title = model.title
     }
 }

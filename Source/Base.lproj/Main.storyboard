@@ -87,5 +87,45 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
+        <!--Third-->
+        <scene sceneID="1KK-yw-bwk">
+            <objects>
+                <viewController storyboardIdentifier="BrowserViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rPw-EV-NsR" userLabel="Third" customClass="BrowserViewController" customModule="teledu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OLC-Tf-L8t"/>
+                        <viewControllerLayoutGuide type="bottom" id="cNJ-ie-Ms4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g7E-h9-Y4t">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Rl2-Ts-K2v"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Third" id="Ikb-Qz-a50"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ffp-Vc-2WO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2246" y="1872"/>
+        </scene>
+        <!--Fourth-->
+        <scene sceneID="8Re-Kd-fIf">
+            <objects>
+                <viewController storyboardIdentifier="SysInfoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hjK-hU-VMh" userLabel="Fourth" customClass="SysInfoViewController" customModule="teledu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XMB-7P-HRx"/>
+                        <viewControllerLayoutGuide type="bottom" id="MSQ-z1-AXY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gmD-EF-YcB">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="aEc-WQ-Tft"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Fourth" id="eLh-Ap-Lmk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sbz-JL-P1d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2246" y="3149"/>
+        </scene>
     </scenes>
 </document>

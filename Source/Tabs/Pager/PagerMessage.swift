@@ -5,15 +5,18 @@
 
 import Foundation
 
-struct PagerMessage {
-    static let empty = PagerMessage(identifier: String.empty, title: nil, description: nil, foregroundColor: nil, backgroundColor: nil, imageUrl: nil)
+class PagerMessage: Activable {
+    static let empty = PagerMessage()
     
-    let identifier: String
-    let title: String?
-    let description: String?
-    let foregroundColor: String?
-    let backgroundColor: String?
-    let imageUrl: String?
+    let identifier: String = String.empty
+    let text: String? = nil
+    let description: String? = nil
+    let foregroundColor: String? = nil
+    let backgroundColor: String? = nil
+    let imageUrl: String? = nil
+    
+    required init() {
+    }
 }
 
 extension PagerMessage {
