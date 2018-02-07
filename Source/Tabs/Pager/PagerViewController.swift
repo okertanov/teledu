@@ -9,6 +9,8 @@ import UIKit
 class PagerViewController: GenericViewController<PagerViewModel> {
     private var propertyChangedToken: Disposable?
     
+    @IBOutlet weak var messageLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
