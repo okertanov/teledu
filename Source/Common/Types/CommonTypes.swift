@@ -8,4 +8,6 @@ import Foundation
 public class CommonTypes {
     public typealias VoidBlockType = () -> Void
     public typealias PredicateBlockType<T> = (_ t: T) -> Bool
+    public typealias GenericBlockTypeP<Param, Ret> = (_ p: Param) -> Ret
+    public typealias GenericBlockTypePP<Param1, Param2, Ret> = (_ p1: Param1, _ p2: Param2) -> Ret
 }
