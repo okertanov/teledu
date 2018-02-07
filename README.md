@@ -10,6 +10,7 @@ Tabbeb interface
     - Load last history message at startup
     - List history on the Remote Controller
     - History badge with unread counter
+    - Real-time typewriting & caret & sound
 
 ### Websocket-based client-server drawings + PubNub as a storage
     - Pen & color
