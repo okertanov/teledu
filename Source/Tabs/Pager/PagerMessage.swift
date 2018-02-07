@@ -6,7 +6,7 @@
 import Foundation
 
 struct PagerMessage {
-    static let empty = PagerMessage.init(identifier: String.empty, title: nil, description: nil, foregroundColor: nil, backgroundColor: nil, imageUrl: nil)
+    static let empty = PagerMessage(identifier: String.empty, title: nil, description: nil, foregroundColor: nil, backgroundColor: nil, imageUrl: nil)
     
     let identifier: String
     let title: String?

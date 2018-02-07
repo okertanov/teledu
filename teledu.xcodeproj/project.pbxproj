@@ -24,6 +24,10 @@
 		76157DAE20288B940027EB87 /* Activable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76157DAD20288B940027EB87 /* Activable.swift */; };
 		76157DB0202891090027EB87 /* RootTabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76157DAF202891090027EB87 /* RootTabBarViewModel.swift */; };
 		76157DB22028A2990027EB87 /* DrawingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76157DB12028A2980027EB87 /* DrawingViewModel.swift */; };
+		7631CC59202B12A60075F2C6 /* DrawingMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7631CC58202B12A60075F2C6 /* DrawingMessage.swift */; };
+		7631CC5B202B12B00075F2C6 /* DrawingMessageParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7631CC5A202B12B00075F2C6 /* DrawingMessageParser.swift */; };
+		7631CC5D202B15690075F2C6 /* BrowserMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7631CC5C202B15690075F2C6 /* BrowserMessage.swift */; };
+		7631CC5F202B15780075F2C6 /* BrowserMessageParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7631CC5E202B15780075F2C6 /* BrowserMessageParser.swift */; };
 		7642ED452029CBFC00328659 /* PubNub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7642ED412029CBE600328659 /* PubNub.framework */; };
 		7642ED462029CBFC00328659 /* PubNub.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7642ED412029CBE600328659 /* PubNub.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7642ED4A2029E1A700328659 /* MessagingMessageParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7642ED492029E1A700328659 /* MessagingMessageParser.swift */; };
@@ -112,6 +116,10 @@
 		76157DAD20288B940027EB87 /* Activable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activable.swift; sourceTree = "<group>"; };
 		76157DAF202891090027EB87 /* RootTabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarViewModel.swift; sourceTree = "<group>"; };
 		76157DB12028A2980027EB87 /* DrawingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewModel.swift; sourceTree = "<group>"; };
+		7631CC58202B12A60075F2C6 /* DrawingMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingMessage.swift; sourceTree = "<group>"; };
+		7631CC5A202B12B00075F2C6 /* DrawingMessageParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingMessageParser.swift; sourceTree = "<group>"; };
+		7631CC5C202B15690075F2C6 /* BrowserMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserMessage.swift; sourceTree = "<group>"; };
+		7631CC5E202B15780075F2C6 /* BrowserMessageParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserMessageParser.swift; sourceTree = "<group>"; };
 		7642ED412029CBE600328659 /* PubNub.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PubNub.framework; sourceTree = "<group>"; };
 		7642ED492029E1A700328659 /* MessagingMessageParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingMessageParser.swift; sourceTree = "<group>"; };
 		7642ED4B2029E28C00328659 /* PagerViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerViewModelTests.swift; sourceTree = "<group>"; };
@@ -379,6 +387,8 @@
 			children = (
 				7662A0D72024778D00E15C63 /* DrawingViewController.swift */,
 				76157DB12028A2980027EB87 /* DrawingViewModel.swift */,
+				7631CC58202B12A60075F2C6 /* DrawingMessage.swift */,
+				7631CC5A202B12B00075F2C6 /* DrawingMessageParser.swift */,
 			);
 			path = Drawing;
 			sourceTree = "<group>";
@@ -388,6 +398,8 @@
 			children = (
 				768E5FD8202483B600D3B93F /* BrowserViewController.swift */,
 				76992BFF2029A4ED0015B52E /* BrowserViewModel.swift */,
+				7631CC5C202B15690075F2C6 /* BrowserMessage.swift */,
+				7631CC5E202B15780075F2C6 /* BrowserMessageParser.swift */,
 			);
 			path = Browser;
 			sourceTree = "<group>";
@@ -608,13 +620,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7631CC59202B12A60075F2C6 /* DrawingMessage.swift in Sources */,
 				76157DA920287B110027EB87 /* ViewModelInjectable.swift in Sources */,
 				768E6000202494D300D3B93F /* MessageBoxService.swift in Sources */,
+				7631CC5B202B12B00075F2C6 /* DrawingMessageParser.swift in Sources */,
 				76157DA3202872150027EB87 /* RootTabBarController.swift in Sources */,
 				76157D9C202869F50027EB87 /* UIImageExtensions.swift in Sources */,
 				768E5FE52024857F00D3B93F /* GenericViewController.swift in Sources */,
 				7642ED53202A284100328659 /* MessagingPayload.swift in Sources */,
 				76992C002029A4ED0015B52E /* BrowserViewModel.swift in Sources */,
+				7631CC5F202B15780075F2C6 /* BrowserMessageParser.swift in Sources */,
 				76992C052029B0D50015B52E /* Event.swift in Sources */,
 				768E5FF9202489AF00D3B93F /* ServiceContextInjectable.swift in Sources */,
 				768E5FF32024884300D3B93F /* ServiceContext.swift in Sources */,
@@ -653,6 +668,7 @@
 				76157D9D202869F50027EB87 /* ViewControllerExtensions.swift in Sources */,
 				76992C072029B10B0015B52E /* Invocable.swift in Sources */,
 				7642ED4A2029E1A700328659 /* MessagingMessageParser.swift in Sources */,
+				7631CC5D202B15690075F2C6 /* BrowserMessage.swift in Sources */,
 				768E60032024950000D3B93F /* MessageBoxServiceImpl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

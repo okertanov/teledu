@@ -51,7 +51,9 @@ class Bootstrapper {
         serviceContext.register(MessagingService.self, Activator.activate(MessagingServiceImpl.self))
         
         serviceContext.registerMany(AbstractMessagingMessageParser.self, [
-            Activator.activate(PagerMessageParser.self)
+            Activator.activate(PagerMessageParser.self) as Registrable,
+            Activator.activate(DrawingMessageParser.self)  as Registrable,
+            Activator.activate(BrowserMessageParser.self)  as Registrable
         ])
     }
     
