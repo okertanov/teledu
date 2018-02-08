@@ -11,8 +11,8 @@
 		76157D9A202869F50027EB87 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76157D8E202869F50027EB87 /* StringExtensions.swift */; };
 		76157D9B202869F50027EB87 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76157D8F202869F50027EB87 /* UIColorExtensions.swift */; };
 		76157D9C202869F50027EB87 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76157D90202869F50027EB87 /* UIImageExtensions.swift */; };
-		76157D9D202869F50027EB87 /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76157D91202869F50027EB87 /* ViewControllerExtensions.swift */; };
-		76157D9E202869F50027EB87 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76157D92202869F50027EB87 /* ViewExtensions.swift */; };
+		76157D9D202869F50027EB87 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76157D91202869F50027EB87 /* UIViewControllerExtensions.swift */; };
+		76157D9E202869F50027EB87 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76157D92202869F50027EB87 /* UIViewExtensions.swift */; };
 		76157D9F202869F50027EB87 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76157D94202869F50027EB87 /* ServiceLocator.swift */; };
 		76157DA0202869F50027EB87 /* CommonTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76157D96202869F50027EB87 /* CommonTypes.swift */; };
 		76157DA1202869F50027EB87 /* ViewLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76157D98202869F50027EB87 /* ViewLocator.swift */; };
@@ -39,6 +39,8 @@
 		7642ED51202A280300328659 /* MessagingSubscriptionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7642ED50202A280300328659 /* MessagingSubscriptionStatus.swift */; };
 		7642ED53202A284100328659 /* MessagingPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7642ED52202A284100328659 /* MessagingPayload.swift */; };
 		7642ED55202A286500328659 /* MessagingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7642ED54202A286500328659 /* MessagingError.swift */; };
+		76452777202C52A8007E9FB3 /* UIApplicationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76452776202C52A8007E9FB3 /* UIApplicationExtensions.swift */; };
+		7645277A202C56D8007E9FB3 /* GenericTvmlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76452779202C56D8007E9FB3 /* GenericTvmlViewController.swift */; };
 		7662A0D42024778D00E15C63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662A0D32024778D00E15C63 /* AppDelegate.swift */; };
 		7662A0D62024778D00E15C63 /* PagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662A0D52024778D00E15C63 /* PagerViewController.swift */; };
 		7662A0D82024778D00E15C63 /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662A0D72024778D00E15C63 /* DrawingViewController.swift */; };
@@ -106,8 +108,8 @@
 		76157D8E202869F50027EB87 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		76157D8F202869F50027EB87 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		76157D90202869F50027EB87 /* UIImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
-		76157D91202869F50027EB87 /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
-		76157D92202869F50027EB87 /* ViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		76157D91202869F50027EB87 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		76157D92202869F50027EB87 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		76157D94202869F50027EB87 /* ServiceLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
 		76157D96202869F50027EB87 /* CommonTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTypes.swift; sourceTree = "<group>"; };
 		76157D98202869F50027EB87 /* ViewLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewLocator.swift; sourceTree = "<group>"; };
@@ -133,6 +135,8 @@
 		7642ED50202A280300328659 /* MessagingSubscriptionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingSubscriptionStatus.swift; sourceTree = "<group>"; };
 		7642ED52202A284100328659 /* MessagingPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingPayload.swift; sourceTree = "<group>"; };
 		7642ED54202A286500328659 /* MessagingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingError.swift; sourceTree = "<group>"; };
+		76452776202C52A8007E9FB3 /* UIApplicationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtensions.swift; sourceTree = "<group>"; };
+		76452779202C56D8007E9FB3 /* GenericTvmlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTvmlViewController.swift; sourceTree = "<group>"; };
 		7662A0D02024778D00E15C63 /* teledu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = teledu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7662A0D32024778D00E15C63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7662A0D52024778D00E15C63 /* PagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerViewController.swift; sourceTree = "<group>"; };
@@ -215,12 +219,13 @@
 		76157D8C202869F50027EB87 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				76157D8D202869F50027EB87 /* NSObjectExtensions.swift */,
 				76157D8E202869F50027EB87 /* StringExtensions.swift */,
+				76157D8D202869F50027EB87 /* NSObjectExtensions.swift */,
 				76157D8F202869F50027EB87 /* UIColorExtensions.swift */,
 				76157D90202869F50027EB87 /* UIImageExtensions.swift */,
-				76157D91202869F50027EB87 /* ViewControllerExtensions.swift */,
-				76157D92202869F50027EB87 /* ViewExtensions.swift */,
+				76157D91202869F50027EB87 /* UIViewControllerExtensions.swift */,
+				76157D92202869F50027EB87 /* UIViewExtensions.swift */,
+				76452776202C52A8007E9FB3 /* UIApplicationExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -269,6 +274,14 @@
 			path = PubNub;
 			sourceTree = "<group>";
 		};
+		76452778202C5668007E9FB3 /* TvmlUI */ = {
+			isa = PBXGroup;
+			children = (
+				76452779202C56D8007E9FB3 /* GenericTvmlViewController.swift */,
+			);
+			path = TvmlUI;
+			sourceTree = "<group>";
+		};
 		7662A0C72024778D00E15C63 = {
 			isa = PBXGroup;
 			children = (
@@ -297,6 +310,7 @@
 				768E5FD1202482DA00D3B93F /* External */,
 				76157D8B202869F50027EB87 /* Common */,
 				768E5FE32024856000D3B93F /* CommonUI */,
+				76452778202C5668007E9FB3 /* TvmlUI */,
 				768E5FD32024833400D3B93F /* Tabs */,
 				768E5FD2202482EA00D3B93F /* Services */,
 				768E5FEB2024866600D3B93F /* System */,
@@ -629,6 +643,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76452777202C52A8007E9FB3 /* UIApplicationExtensions.swift in Sources */,
 				7631CC59202B12A60075F2C6 /* DrawingMessage.swift in Sources */,
 				76157DA920287B110027EB87 /* ViewModelInjectable.swift in Sources */,
 				768E6000202494D300D3B93F /* MessageBoxService.swift in Sources */,
@@ -651,7 +666,7 @@
 				768E5FEA2024865600D3B93F /* MessagingServiceImpl.swift in Sources */,
 				76157DB0202891090027EB87 /* RootTabBarViewModel.swift in Sources */,
 				76992C092029B1160015B52E /* Disposable.swift in Sources */,
-				76157D9E202869F50027EB87 /* ViewExtensions.swift in Sources */,
+				76157D9E202869F50027EB87 /* UIViewExtensions.swift in Sources */,
 				7642ED4F202A257B00328659 /* PagerMessageParser.swift in Sources */,
 				768E5FD9202483B600D3B93F /* BrowserViewController.swift in Sources */,
 				7642ED51202A280300328659 /* MessagingSubscriptionStatus.swift in Sources */,
@@ -662,6 +677,7 @@
 				7642ED55202A286500328659 /* MessagingError.swift in Sources */,
 				76157DA5202875930027EB87 /* PagerViewModel.swift in Sources */,
 				7631CC61202B23030075F2C6 /* ViewModelRequired.swift in Sources */,
+				7645277A202C56D8007E9FB3 /* GenericTvmlViewController.swift in Sources */,
 				7662A0D42024778D00E15C63 /* AppDelegate.swift in Sources */,
 				76992C0B2029B3790015B52E /* PagerMessage.swift in Sources */,
 				76157D9A202869F50027EB87 /* StringExtensions.swift in Sources */,
@@ -677,7 +693,7 @@
 				769EC1C72024AE9A0011DB3A /* WebSocketService.swift in Sources */,
 				7662A0D62024778D00E15C63 /* PagerViewController.swift in Sources */,
 				76157DB22028A2990027EB87 /* DrawingViewModel.swift in Sources */,
-				76157D9D202869F50027EB87 /* ViewControllerExtensions.swift in Sources */,
+				76157D9D202869F50027EB87 /* UIViewControllerExtensions.swift in Sources */,
 				76992C072029B10B0015B52E /* Invocable.swift in Sources */,
 				7642ED4A2029E1A700328659 /* AssociatedMessagingMessageParser.swift in Sources */,
 				7631CC5D202B15690075F2C6 /* BrowserMessage.swift in Sources */,
