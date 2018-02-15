@@ -5,5 +5,12 @@
 
 import Foundation
 
-class GenericTvmlViewController<TViewModel: ViewModel>: GenericViewController<TViewModel> {
+open class GenericTvmlViewController<TViewModel: ViewModel>: GenericViewController<TViewModel> {
+    open override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    open override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
 }

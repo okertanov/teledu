@@ -24,15 +24,14 @@ Tabbeb interface
     - Type URL manually via remote
     
 ### Sys Info tab
-    - Host name
-    - Host IP address
+    - Network: (host name, host IP address, internet reachable)
     - OS info (platform, version, free space)
     - HW info (RAM, CPU)
 
 Other
 -------
-    - Use PubNub Functions to process/translate messages
     - Integrate Telegram bot (other bots)
+    - Use PubNub Functions to process/translate messages
     - HomeKit?
     - CCTV camera video?
     - Home Automation?
@@ -41,4 +40,6 @@ Other
     - Proximity & MAC address discovery: Say hello to nearest phone
     - Wake up by ethernet/wifi/bt/remote
     - Wake up by time
+    - Last message from history on the home row
+    - Random emoji to cover the screen
  

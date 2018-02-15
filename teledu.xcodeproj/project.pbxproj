@@ -41,6 +41,7 @@
 		7642ED55202A286500328659 /* MessagingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7642ED54202A286500328659 /* MessagingError.swift */; };
 		76452777202C52A8007E9FB3 /* UIApplicationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76452776202C52A8007E9FB3 /* UIApplicationExtensions.swift */; };
 		7645277A202C56D8007E9FB3 /* GenericTvmlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76452779202C56D8007E9FB3 /* GenericTvmlViewController.swift */; };
+		7645277C202C591E007E9FB3 /* GenericSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7645277B202C591E007E9FB3 /* GenericSplitViewController.swift */; };
 		7662A0D42024778D00E15C63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662A0D32024778D00E15C63 /* AppDelegate.swift */; };
 		7662A0D62024778D00E15C63 /* PagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662A0D52024778D00E15C63 /* PagerViewController.swift */; };
 		7662A0D82024778D00E15C63 /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662A0D72024778D00E15C63 /* DrawingViewController.swift */; };
@@ -48,6 +49,9 @@
 		7662A0DD2024778D00E15C63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7662A0DC2024778D00E15C63 /* Assets.xcassets */; };
 		7662A0E82024778D00E15C63 /* ActivatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662A0E72024778D00E15C63 /* ActivatorTests.swift */; };
 		7662A0F32024778D00E15C63 /* teleduUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662A0F22024778D00E15C63 /* teleduUITests.swift */; };
+		76746F1B203487A500C107F0 /* SysInfoMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76746F1A203487A500C107F0 /* SysInfoMasterViewController.swift */; };
+		76746F1D2034882B00C107F0 /* GenericTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76746F1C2034882B00C107F0 /* GenericTableViewController.swift */; };
+		76746F1F2034945000C107F0 /* SysInfoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76746F1E2034945000C107F0 /* SysInfoDetailsViewController.swift */; };
 		768E5FD9202483B600D3B93F /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E5FD8202483B600D3B93F /* BrowserViewController.swift */; };
 		768E5FDB202483C800D3B93F /* SysInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E5FDA202483C800D3B93F /* SysInfoViewController.swift */; };
 		768E5FE52024857F00D3B93F /* GenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E5FE42024857F00D3B93F /* GenericViewController.swift */; };
@@ -137,6 +141,7 @@
 		7642ED54202A286500328659 /* MessagingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingError.swift; sourceTree = "<group>"; };
 		76452776202C52A8007E9FB3 /* UIApplicationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtensions.swift; sourceTree = "<group>"; };
 		76452779202C56D8007E9FB3 /* GenericTvmlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTvmlViewController.swift; sourceTree = "<group>"; };
+		7645277B202C591E007E9FB3 /* GenericSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericSplitViewController.swift; sourceTree = "<group>"; };
 		7662A0D02024778D00E15C63 /* teledu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = teledu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7662A0D32024778D00E15C63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7662A0D52024778D00E15C63 /* PagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +156,9 @@
 		7662A0F22024778D00E15C63 /* teleduUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teleduUITests.swift; sourceTree = "<group>"; };
 		7662A0F42024778D00E15C63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7662A1002024784E00E15C63 /* teledu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = teledu.entitlements; sourceTree = "<group>"; };
+		76746F1A203487A500C107F0 /* SysInfoMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SysInfoMasterViewController.swift; sourceTree = "<group>"; };
+		76746F1C2034882B00C107F0 /* GenericTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewController.swift; sourceTree = "<group>"; };
+		76746F1E2034945000C107F0 /* SysInfoDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SysInfoDetailsViewController.swift; sourceTree = "<group>"; };
 		768E5FD8202483B600D3B93F /* BrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
 		768E5FDA202483C800D3B93F /* SysInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SysInfoViewController.swift; sourceTree = "<group>"; };
 		768E5FE42024857F00D3B93F /* GenericViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericViewController.swift; sourceTree = "<group>"; };
@@ -349,6 +357,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		76746F192034877A00C107F0 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				76746F1A203487A500C107F0 /* SysInfoMasterViewController.swift */,
+				76746F1E2034945000C107F0 /* SysInfoDetailsViewController.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
 		768E5FD0202482CA00D3B93F /* Messaging */ = {
 			isa = PBXGroup;
 			children = (
@@ -429,6 +446,7 @@
 		768E5FD72024837800D3B93F /* SysInfo */ = {
 			isa = PBXGroup;
 			children = (
+				76746F192034877A00C107F0 /* Subviews */,
 				768E5FDA202483C800D3B93F /* SysInfoViewController.swift */,
 				76992C012029A5180015B52E /* SysInfoViewModel.swift */,
 			);
@@ -439,6 +457,8 @@
 			isa = PBXGroup;
 			children = (
 				768E5FE42024857F00D3B93F /* GenericViewController.swift */,
+				76746F1C2034882B00C107F0 /* GenericTableViewController.swift */,
+				7645277B202C591E007E9FB3 /* GenericSplitViewController.swift */,
 				76157DA2202872140027EB87 /* RootTabBarController.swift */,
 				76157DAF202891090027EB87 /* RootTabBarViewModel.swift */,
 			);
@@ -649,6 +669,7 @@
 				768E6000202494D300D3B93F /* MessageBoxService.swift in Sources */,
 				7631CC5B202B12B00075F2C6 /* DrawingMessageParser.swift in Sources */,
 				76157DA3202872150027EB87 /* RootTabBarController.swift in Sources */,
+				76746F1D2034882B00C107F0 /* GenericTableViewController.swift in Sources */,
 				76157D9C202869F50027EB87 /* UIImageExtensions.swift in Sources */,
 				768E5FE52024857F00D3B93F /* GenericViewController.swift in Sources */,
 				7642ED53202A284100328659 /* MessagingPayload.swift in Sources */,
@@ -665,6 +686,7 @@
 				76157DA7202875C90027EB87 /* ViewModel.swift in Sources */,
 				768E5FEA2024865600D3B93F /* MessagingServiceImpl.swift in Sources */,
 				76157DB0202891090027EB87 /* RootTabBarViewModel.swift in Sources */,
+				76746F1F2034945000C107F0 /* SysInfoDetailsViewController.swift in Sources */,
 				76992C092029B1160015B52E /* Disposable.swift in Sources */,
 				76157D9E202869F50027EB87 /* UIViewExtensions.swift in Sources */,
 				7642ED4F202A257B00328659 /* PagerMessageParser.swift in Sources */,
@@ -673,6 +695,7 @@
 				76157DA0202869F50027EB87 /* CommonTypes.swift in Sources */,
 				76992C022029A5180015B52E /* SysInfoViewModel.swift in Sources */,
 				768E5FED2024869300D3B93F /* Bootstrapper.swift in Sources */,
+				7645277C202C591E007E9FB3 /* GenericSplitViewController.swift in Sources */,
 				76157DA1202869F50027EB87 /* ViewLocator.swift in Sources */,
 				7642ED55202A286500328659 /* MessagingError.swift in Sources */,
 				76157DA5202875930027EB87 /* PagerViewModel.swift in Sources */,
@@ -681,6 +704,7 @@
 				7662A0D42024778D00E15C63 /* AppDelegate.swift in Sources */,
 				76992C0B2029B3790015B52E /* PagerMessage.swift in Sources */,
 				76157D9A202869F50027EB87 /* StringExtensions.swift in Sources */,
+				76746F1B203487A500C107F0 /* SysInfoMasterViewController.swift in Sources */,
 				768E5FDB202483C800D3B93F /* SysInfoViewController.swift in Sources */,
 				76157D9F202869F50027EB87 /* ServiceLocator.swift in Sources */,
 				76157DAC2028842C0027EB87 /* Activator.swift in Sources */,
