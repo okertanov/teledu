@@ -61,9 +61,26 @@ class SysInfoHardwareViewModel: SysInfoDetailsViewModel{
 }
 
 //
+// Empty placeholder item
+//
+class SysInfoEmptyViewModel: SysInfoDetailsViewModel{
+}
+
+//
 // SysInfoDetailsViewController class
 //
 class SysInfoDetailsViewController: GenericTableViewController<SysInfoDetailsViewModel> {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if model!.itemsCount <= 0 {
+            tableView.isHidden = true
+        }
+        else {
+            tableView.reloadData()
+        }
+    }
+    
     override public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return model!.itemsCount
     }
