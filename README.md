@@ -25,8 +25,8 @@ Tabbeb interface
     
 ### Sys Info tab
     - Network: (host name, host IP address, internet reachable)
-    - OS info (platform, version, free space)
-    - HW info (RAM, CPU)
+    - OS info (platform, version)
+    - HW info (RAM, CPU, free space)
 
 Other
 -------

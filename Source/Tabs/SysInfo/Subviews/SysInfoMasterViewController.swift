@@ -11,7 +11,7 @@ class SysInfoMasterViewModel: ViewModel {
     
     public let propertyChanged = Event<AnyKeyPath>()
     
-    public var selectedItem: Int = 0 {
+    public var selectedItem: Int = NSNotFound {
         didSet { propertyChanged.raise(\SysInfoMasterViewModel.selectedItem) }
     }
 }

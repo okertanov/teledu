@@ -7,66 +7,6 @@ import Foundation
 import UIKit
 
 //
-// Abstract model
-//
-class SysInfoDetailsViewModel: ViewModel {
-    typealias SysInfoItem = (title: String, description: String)
-    
-    var itemsCount: Int {
-        return 0
-    }
-    
-    func getItemAt(_ idx: Int) -> SysInfoItem? {
-        return nil
-    }
-}
-
-//
-// Network menu item
-//
-class SysInfoNetworkViewModel: SysInfoDetailsViewModel{
-    override var itemsCount: Int {
-        return 1
-    }
-    
-    override func getItemAt(_ idx: Int) -> SysInfoItem? {
-        return SysInfoItem(title: idx.description, description: idx.description)
-    }
-}
-
-//
-// OS Info menu item
-//
-class SysInfoOSInfoViewModel: SysInfoDetailsViewModel{
-    override var itemsCount: Int {
-        return 3
-    }
-    
-    override func getItemAt(_ idx: Int) -> SysInfoItem? {
-        return SysInfoItem(title: idx.description, description: idx.description)
-    }
-}
-
-//
-// Hardware menu item
-//
-class SysInfoHardwareViewModel: SysInfoDetailsViewModel{
-    override var itemsCount: Int {
-        return 5
-    }
-    
-    override func getItemAt(_ idx: Int) -> SysInfoItem? {
-        return SysInfoItem(title: idx.description, description: idx.description)
-    }
-}
-
-//
-// Empty placeholder item
-//
-class SysInfoEmptyViewModel: SysInfoDetailsViewModel{
-}
-
-//
 // SysInfoDetailsViewController class
 //
 class SysInfoDetailsViewController: GenericTableViewController<SysInfoDetailsViewModel> {

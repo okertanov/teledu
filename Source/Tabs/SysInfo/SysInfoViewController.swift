@@ -22,6 +22,8 @@ class SysInfoViewController: GenericSplitViewController<SysInfoViewModel> {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //view.backgroundColor = UIColor.black
+        
         masterVcModelpropertyChangedToken = masterVc.model!.propertyChanged.addHandler(target: masterVc.model!, onMasterVcModelPropertyChanged)
     }
     
