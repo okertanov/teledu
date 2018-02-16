@@ -171,6 +171,36 @@
             </objects>
             <point key="canvasLocation" x="4318" y="4408"/>
         </scene>
+        <!--Sys Info Empty View Controller-->
+        <scene sceneID="5Eo-39-JKE">
+            <objects>
+                <viewController storyboardIdentifier="SysInfoEmptyViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tEm-pi-JI3" customClass="SysInfoEmptyViewController" customModule="teledu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UL5-j9-3xT"/>
+                        <viewControllerLayoutGuide type="bottom" id="wyM-Vv-ldw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="brW-Ch-kF6">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="secam-test-card" translatesAutoresizingMaskIntoConstraints="NO" id="rAf-TV-cLg">
+                                <rect key="frame" x="90" y="60" width="1740" height="960"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rfp-Qf-9ue" firstAttribute="bottom" secondItem="rAf-TV-cLg" secondAttribute="bottom" id="3Dc-ix-hB4"/>
+                            <constraint firstItem="rAf-TV-cLg" firstAttribute="top" secondItem="rfp-Qf-9ue" secondAttribute="top" id="GxS-zr-kfr"/>
+                            <constraint firstItem="rAf-TV-cLg" firstAttribute="leading" secondItem="rfp-Qf-9ue" secondAttribute="leading" id="gGJ-4T-L7U"/>
+                            <constraint firstItem="rfp-Qf-9ue" firstAttribute="trailing" secondItem="rAf-TV-cLg" secondAttribute="trailing" id="m7U-ee-Y5r"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rfp-Qf-9ue"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cmk-g6-t0s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4318" y="5678"/>
+        </scene>
         <!--SysInfo Master Table View Controller-->
         <scene sceneID="MBJ-5c-NIO">
             <objects>
@@ -209,4 +239,7 @@
             <point key="canvasLocation" x="4318" y="3149"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="secam-test-card" width="1000" height="750"/>
+    </resources>
 </document>

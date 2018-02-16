@@ -10,6 +10,10 @@ import UIKit
 // SysInfoDetailsViewController class
 //
 class SysInfoDetailsViewController: GenericTableViewController<SysInfoDetailsViewModel> {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         

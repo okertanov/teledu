@@ -70,6 +70,7 @@
 		769612692035D5E60035A8A4 /* SysInfoOSInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769612682035D5E60035A8A4 /* SysInfoOSInfoViewModel.swift */; };
 		7696126B2035D60F0035A8A4 /* SysInfoHardwareViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7696126A2035D60F0035A8A4 /* SysInfoHardwareViewModel.swift */; };
 		7696126D2035D6350035A8A4 /* SysInfoEmptyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7696126C2035D6350035A8A4 /* SysInfoEmptyViewModel.swift */; };
+		7696126F2036C95E0035A8A4 /* SysInfoEmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7696126E2036C95E0035A8A4 /* SysInfoEmptyViewController.swift */; };
 		76992BFE20299F9D0015B52E /* ServiceLocatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76992BFD20299F9D0015B52E /* ServiceLocatorTests.swift */; };
 		76992C002029A4ED0015B52E /* BrowserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76992BFF2029A4ED0015B52E /* BrowserViewModel.swift */; };
 		76992C022029A5180015B52E /* SysInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76992C012029A5180015B52E /* SysInfoViewModel.swift */; };
@@ -183,6 +184,7 @@
 		769612682035D5E60035A8A4 /* SysInfoOSInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SysInfoOSInfoViewModel.swift; sourceTree = "<group>"; };
 		7696126A2035D60F0035A8A4 /* SysInfoHardwareViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SysInfoHardwareViewModel.swift; sourceTree = "<group>"; };
 		7696126C2035D6350035A8A4 /* SysInfoEmptyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SysInfoEmptyViewModel.swift; sourceTree = "<group>"; };
+		7696126E2036C95E0035A8A4 /* SysInfoEmptyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SysInfoEmptyViewController.swift; sourceTree = "<group>"; };
 		76992BFD20299F9D0015B52E /* ServiceLocatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocatorTests.swift; sourceTree = "<group>"; };
 		76992BFF2029A4ED0015B52E /* BrowserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViewModel.swift; sourceTree = "<group>"; };
 		76992C012029A5180015B52E /* SysInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SysInfoViewModel.swift; sourceTree = "<group>"; };
@@ -372,6 +374,7 @@
 			children = (
 				76746F1A203487A500C107F0 /* SysInfoMasterViewController.swift */,
 				76746F1E2034945000C107F0 /* SysInfoDetailsViewController.swift */,
+				7696126E2036C95E0035A8A4 /* SysInfoEmptyViewController.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -688,6 +691,7 @@
 			files = (
 				76452777202C52A8007E9FB3 /* UIApplicationExtensions.swift in Sources */,
 				7631CC59202B12A60075F2C6 /* DrawingMessage.swift in Sources */,
+				7696126F2036C95E0035A8A4 /* SysInfoEmptyViewController.swift in Sources */,
 				76157DA920287B110027EB87 /* ViewModelInjectable.swift in Sources */,
 				768E6000202494D300D3B93F /* MessageBoxService.swift in Sources */,
 				769612692035D5E60035A8A4 /* SysInfoOSInfoViewModel.swift in Sources */,

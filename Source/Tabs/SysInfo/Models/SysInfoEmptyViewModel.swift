@@ -18,6 +18,6 @@ class SysInfoEmptyViewModel: SysInfoDetailsViewModel {
     }
     
     override var backgroundImageName: String? {
-        return nil
+        return "secam-test-card"
     }
 }

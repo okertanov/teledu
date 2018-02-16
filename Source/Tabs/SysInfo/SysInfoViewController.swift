@@ -17,7 +17,7 @@ class SysInfoViewController: GenericSplitViewController<SysInfoViewModel> {
         ViewLocator.locateVC(SysInfoDetailsViewController.self, SysInfoOSInfoViewModel.self)!,
         ViewLocator.locateVC(SysInfoDetailsViewController.self, SysInfoHardwareViewModel.self)!
     ]
-    private lazy var emptyPlaceholderVc = ViewLocator.locateVC(SysInfoDetailsViewController.self, SysInfoEmptyViewModel.self)!
+    private lazy var emptyPlaceholderVc = ViewLocator.locateVC(SysInfoEmptyViewController.self, SysInfoEmptyViewModel.self)!
     
     override func viewDidLoad() {
         super.viewDidLoad()
